@@ -1,0 +1,399 @@
+/*-----GENERALES-------------------------------------------------------------*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.tituloppal{
+    color: #c71c24;
+    font-size: 6rem;
+    line-height: 6rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.titulosecundario{
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    color: #c71c24;
+}
+
+.titulotercera{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    color: #c71c24;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.negrita{
+    color: #c71c24;
+    font-weight: bold;
+}
+
+/*----HEADER--------------------------------------------------------------*/
+main{
+    margin: 5%;
+    position: relative;
+    top: 40px;
+}
+
+header{
+    background-color: #c71c24;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo{
+    width: 150px;
+    padding: 15px 0 15px 5%;
+    float: left;
+}
+
+nav ul{
+    position: absolute;
+    right: 5%;
+    top: 5px;
+}
+
+nav ul li{
+    font-family: 'Open Sans', sans-serif;
+    list-style:none;
+    text-transform: uppercase;   
+    display: inline-block;
+    padding-left: 30px;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+.sombra{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 62px;
+    width: 100%;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
+    z-index: -99;
+}
+
+/*-----INTRO-----------------------------------------------------------------*/
+
+#presentacion{
+    margin-bottom: 170px;
+}
+
+#presentacion .informacion{
+    float: left;
+    width: 50%;
+}
+
+#presentacion .foto{
+    display: flex;
+    flex-direction: column;
+}
+
+#presentacion .foto img{
+    height: 450px;
+    align-self: center;
+    z-index: 99;
+}
+
+#presentacion .informacion p{
+    margin: 40px 0 30px 0;
+}
+
+.boton{
+    background-color: #c71c24;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color:white;
+    padding: 7px;
+    width: 200px;
+    text-align: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.boton:hover{
+    font-weight: bold;
+}
+
+.circulo{
+    border-radius: 50%;
+    background:  #c71c24;
+}
+
+.c1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    right: 25%;
+}
+
+.c2{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 120px;
+    right: 5%;
+}
+
+.aro{
+    border-radius: 50%;
+    background:  none;
+    border: 4px #c71c24 dotted; 
+}
+
+.a1{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 50px;
+    right: 8%;
+}
+
+.a2{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 210px;
+    right: 28%;
+}
+
+
+/*-----NOSOTROS-------------------------------------------------------------*/
+
+#nosotros{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 170px;  
+}
+
+#nosotros .foto{
+    order: -1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#nosotros .foto img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+} 
+
+#nosotros .informacion{
+    text-align: right;
+    width: 50%;
+    align-self: center;
+    
+}
+
+#nosotros .foto img:hover{
+    transition: 2s ease;
+    filter: invert(100%);
+}
+
+
+
+
+/*-----QUE HACEMOS------------------------------------------------------------*/
+
+#quehacemos{
+    margin-top: 50px;
+}
+
+#quehacemos .informacion{
+    float: left;
+    width: 50%;
+}
+
+#quehacemos .informacion ul{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 16px;
+    padding: 0;
+}
+
+#quehacemos .informacion ul li::before{
+    content: "\2022";
+    color: #c71c24;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#quehacemos .video{
+    display: flex;
+    flex-direction: column;
+}
+
+#quehacemos .video iframe{
+    align-self: center;
+}
+
+
+
+/*-----LO QUE TE ENSEÑAMOS / ALUMNOS------------------------------------------*/
+
+#nuestrapropuesta .informacion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+#nuestrapropuesta .informacion p{
+    width: 60%;
+    align-self: center;
+    margin: -10px 0 50px 0;
+}
+
+#nuestrapropuesta ul{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#nuestrapropuesta ul li{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0 10px;
+    width: 20%;
+}
+
+#nuestrapropuesta ul li h3{
+    color: #c71c24;
+}
+
+.trabajosalumnos{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.trabajosalumnos .fotosalumnos{
+    margin: 0 -5.5%;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.trabajosalumnos .fotosalumnos img{
+    width: 33.33%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.trabajosalumnos .fotosalumnos img:hover{
+    transition: 2s ease;
+    filter: invert(100%);
+}
+
+/*----CONTACTO------------------------------------------------------------*/
+
+#contacto {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    margin: 80px 0;
+}
+
+#contacto .informacion{
+    width: 50%;
+    margin-right: 5%;
+}
+
+#contacto .mapa{
+    height: 600px;
+    width: 50%;
+}
+
+#provincia{
+    font-family: 'Open Sans', sans-serif;
+}
+
+form .boton{
+    border: 0px;
+}
+
+
+
+/*-----FOOTER-------------------------------------------------------------*/
+footer {
+    background-color: #c71c24;
+    color: white;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0;
+}
+
+.datosfinales{
+    margin: 0 5%;
+    width: 50%;
+}
+
+.iconos{
+    width: 50%;
+    margin: 0 5%;
+    text-align: right;
+    align-self: center; 
+}
+
+.iconos a{
+   font-size: 1.5rem;
+   padding: 0px 10px;
+}
+
+
+/*-----BLOG-------------------------------------------------------------*/
+form{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+table{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border: 2px solid #c71c24;
+}
+
+.rojo{
+    background-color: #c71c24;
+    color: white;
+}
+
+td{
+    width: 140px;
+}
+
+th{
+    width: 100px;
+}
