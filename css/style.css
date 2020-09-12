@@ -2,33 +2,35 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .tituloppal{
     color: #c71c24;
     font-size: 6rem;
     line-height: 6rem;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 900;
     margin: 0px;
 }
 
 .titulosecundario{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 3rem;
     color: #c71c24;
 }
 
 .titulotercera{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 2rem;
     color: #c71c24;
 }
 
 p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1rem;
     font-weight: 400;
+    line-height: 1.4rem;
 }
 
 .negrita{
@@ -65,7 +67,7 @@ nav ul{
 }
 
 nav ul li{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     list-style:none;
     text-transform: uppercase;   
     display: inline-block;
@@ -94,7 +96,7 @@ a:hover{
 /*-----INTRO-----------------------------------------------------------------*/
 
 #presentacion{
-    margin-bottom: 170px;
+    margin: 90px 0 20px 0;
 }
 
 #presentacion .informacion{
@@ -102,19 +104,29 @@ a:hover{
     width: 50%;
 }
 
+@keyframes mover{
+    0%{transform: rotate(20deg);}
+    50%{transform: rotate(25deg); }
+    100%{transform: rotate(20deg);}
+}
+
 #presentacion .foto{
     display: flex;
     flex-direction: column;
+    height: 470px;
 }
 
 #presentacion .foto img{
     height: 450px;
     align-self: center;
     z-index: 99;
+    animation: mover 6s infinite;
+    /* transform: rotate(25deg); */
 }
 
 #presentacion .informacion p{
     margin: 40px 0 30px 0;
+    width: 95%;
 }
 
 .boton{
@@ -134,48 +146,43 @@ a:hover{
     font-weight: bold;
 }
 
+@keyframes achicar{
+    0%{transform: scale(1);}
+    50%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
+
+@keyframes achicar2{
+    0%{transform: scale(0.8);}
+    50%{transform: scale(1);}
+    100%{transform: scale(0.8);}
+}
+
 .circulo{
     border-radius: 50%;
-    background:  #c71c24;
 }
 
 .c1{
-    width: 200px;
-    height: 200px;
+    animation: achicar 5s infinite;
+    background:  #c71c24;
+    width: 650px;
+    height: 650px;
     position: absolute;
-    top: 50px;
-    right: 25%;
+    top: -240px;
+    right: -160px;
+    
 }
 
 .c2{
-    width: 300px;
-    height: 300px;
+    animation: achicar2 6s infinite;
+    background:  white;
+    width: 400px;
+    height: 400px;
     position: absolute;
-    top: 120px;
-    right: 5%;
+    top: -100px;
+    right: -30px;
 }
 
-.aro{
-    border-radius: 50%;
-    background:  none;
-    border: 4px #c71c24 dotted; 
-}
-
-.a1{
-    width: 180px;
-    height: 180px;
-    position: absolute;
-    top: 50px;
-    right: 8%;
-}
-
-.a2{
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    top: 210px;
-    right: 28%;
-}
 
 
 /*-----NOSOTROS-------------------------------------------------------------*/
@@ -183,7 +190,8 @@ a:hover{
 #nosotros{
     display: flex;
     flex-direction: row;
-    margin-bottom: 170px;  
+    padding-top: 90px;  
+    padding-bottom: 70px;  
 }
 
 #nosotros .foto{
@@ -202,10 +210,9 @@ a:hover{
 } 
 
 #nosotros .informacion{
-    text-align: right;
+    text-align: center;
     width: 50%;
-    align-self: center;
-    
+    align-self: center;   
 }
 
 #nosotros .foto img:hover{
@@ -213,23 +220,33 @@ a:hover{
     filter: invert(100%);
 }
 
-
-
+#nosotros .informacion p{
+    padding: 0 5%;
+}
 
 /*-----QUE HACEMOS------------------------------------------------------------*/
 
 #quehacemos{
-    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: row;
 }
 
 #quehacemos .informacion{
+    align-self: center;
     float: left;
     width: 50%;
+    text-align: center;
 }
+
+#quehacemos p{
+    padding: 0 5%;
+}
+
 
 #quehacemos .informacion ul{
     list-style: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     margin-left: 16px;
@@ -245,18 +262,32 @@ a:hover{
     margin-left: -1em;
 }
 
-#quehacemos .video{
+#quehacemos .foto{
+    width: 50%;
     display: flex;
     flex-direction: column;
-}
+ }
 
-#quehacemos .video iframe{
+ #quehacemos .foto img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
     align-self: center;
-}
+} 
 
+
+#quehacemos .foto img:hover{
+    transition: 2s ease;
+    filter: invert(100%);
+}
 
 
 /*-----LO QUE TE ENSEÑAMOS / ALUMNOS------------------------------------------*/
+
+ #nuestrapropuesta .informacion .titulosecundario{
+    margin-top: 90px;
+}
 
 #nuestrapropuesta .informacion{
     text-align: center;
@@ -281,7 +312,7 @@ a:hover{
 }
 
 #nuestrapropuesta ul li{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     text-align: center;
     margin: 0px;
     padding: 0 10px;
@@ -321,7 +352,7 @@ a:hover{
     text-align: right;
     display: flex;
     flex-direction: row;
-    margin: 80px 0;
+    padding: 80px 0 0 0;
 }
 
 #contacto .informacion{
@@ -335,7 +366,7 @@ a:hover{
 }
 
 #provincia{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 form .boton{
@@ -374,13 +405,13 @@ footer {
 
 /*-----BLOG-------------------------------------------------------------*/
 form{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
 }
 
 table{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     border: 2px solid #c71c24;
 }
