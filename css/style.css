@@ -34,8 +34,15 @@ p{
 }
 
 .negrita{
-    color: #c71c24;
     font-weight: bold;
+}
+
+.roja{
+    color: #c71c24;
+}
+
+.blanca{
+    color: white;
 }
 
 /*----HEADER--------------------------------------------------------------*/
@@ -317,6 +324,12 @@ a:hover{
     margin: 0px;
     padding: 0 10px;
     width: 20%;
+}
+
+.iconos-svg{
+    height: 120px;
+    margin: 0;
+    padding: 0;
 }
 
 #nuestrapropuesta ul li h3{
