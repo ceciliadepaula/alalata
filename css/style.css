@@ -5,6 +5,10 @@ body{
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .tituloppal{
     color: #c71c24;
     font-size: 6rem;
@@ -290,7 +294,7 @@ a:hover{
 }
 
 
-/*-----LO QUE TE ENSEÑAMOS / ALUMNOS------------------------------------------*/
+/*-----LO QUE TE ENSEÑAMOS------------------------------------------*/
 
  #nuestrapropuesta .informacion .titulosecundario{
     margin-top: 90px;
@@ -336,6 +340,8 @@ a:hover{
     color: #c71c24;
 }
 
+/*----------FOTOS ALUMNOS------------------------------------------*/
+
 .trabajosalumnos{
     text-align: center;
     margin-top: 80px;
@@ -348,7 +354,7 @@ a:hover{
     flex-flow: row wrap;
 }
 
-.trabajosalumnos .fotosalumnos img{
+/* .trabajosalumnos .fotosalumnos img{
     width: 33.33%;
     height: 400px;
     object-fit: cover;
@@ -357,6 +363,44 @@ a:hover{
 .trabajosalumnos .fotosalumnos img:hover{
     transition: 2s ease;
     filter: invert(100%);
+} */
+
+.trabajosalumnos .fotosalumnos .fotoindividual{
+    width: 33.33%;
+    height: 400px;
+}
+
+.trabajosalumnos .fotosalumnos .fotoindividual img{
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.trabajosalumnos .fotosalumnos .fotoindividual:hover img{
+    transition: 2s ease;
+    filter: invert(100%);
+    width: 100%;
+}
+
+.trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno{
+    background-color: #c71c24;
+    color: white;
+    position: relative;
+    bottom: 50px;
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 50px;
+}
+
+.trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno p{
+    margin: 0px;
+    text-align: center;
+    padding: 3px;
+    display: none;
+}
+
+.trabajosalumnos .fotosalumnos .fotoindividual:hover .nombrealumno p{
+    display: inherit;
 }
 
 /*----CONTACTO------------------------------------------------------------*/
