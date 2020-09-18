@@ -1,44 +1,4 @@
-/*-----BLOG-------------------------------------------------------------*/
-#blog{
-    margin: 90px 0 20px 0;
-}
-
-.notasblog{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 50px;
-}
-
-.notasblog .notadeldia .titulosecundario{
-    padding: 30px 0; 
-    background-color: white;
-    position: sticky;
-    top: 60px;
-    margin-bottom: 0;
-    /* background-color: rebeccapurple; */
-}
-
-.notasblog .notadeldia p{
-    padding: 0 0 1rem 0;
-    margin: 0 0 0.5rem 0;
-}
-
-.notasblog .proximasnoticias{
-    margin-top: 40px;
-    position: sticky;
-    top: 60px;
-    height: 100vh;
-    /* background-color: rosybrown; */
-    border: 1px solid red;
-}
-
-.notasblog .proximasnoticias .titulotercera{
-    margin-top: 0;
-    padding-top: 40px; 
-    text-align: center;
-}
-
-
+/*-----contacto-------------------------------------------------------------*/
 form{
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
@@ -57,6 +17,40 @@ table{
     color: white;
 }
 
-td{
-    width: 140px;
+/*------blog-----------------------------------------*/
+
+#articulos{
+    padding: 90px 0 0 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+#articulos .posteo{
+    background-color: whitesmoke;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
+}
+
+#articulos .posteo .imagen img{
+    width: 100%;
+}
+
+#articulos .posteo .resumen .titulotercera{
+    color: #c71c24;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+#articulos .posteo .resumen p{
+    padding: 0 15px 15px 15px;
+    margin: 0;
+    text-align: center;
+}
+
+#articulos .posteo .resumen .boton{
+    height: 20px;
+    margin: 15px auto;
+    width: 85%;
 }
