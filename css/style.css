@@ -115,6 +115,10 @@ a:hover{
     width: 50%;
 }
 
+#presentacion .informacion .tituloppal{
+    animation-duration: 3s;
+}
+
 @keyframes mover{
     0%{transform: rotate(20deg);}
     50%{transform: rotate(25deg); }
@@ -138,6 +142,12 @@ a:hover{
 #presentacion .informacion p{
     margin: 40px 0 30px 0;
     width: 95%;
+    animation-duration: 3s;
+}
+
+#presentacion .informacion .boton{
+    animation-duration: 3s;
+    animation-delay: 2s;
 }
 
 .boton{
@@ -152,6 +162,8 @@ a:hover{
     border-radius: 50px;
     text-transform: uppercase;
 }
+
+
 
 .boton:hover{
     font-weight: bold;
@@ -348,25 +360,13 @@ a:hover{
 }
 
 .trabajosalumnos .fotosalumnos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin: 0 -5.5%;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
 }
-
-/* .trabajosalumnos .fotosalumnos img{
-    width: 33.33%;
-    height: 400px;
-    object-fit: cover;
-}
-
-.trabajosalumnos .fotosalumnos img:hover{
-    transition: 2s ease;
-    filter: invert(100%);
-} */
 
 .trabajosalumnos .fotosalumnos .fotoindividual{
-    width: 33.33%;
     height: 400px;
 }
 
@@ -401,7 +401,7 @@ a:hover{
 
 .trabajosalumnos .fotosalumnos .fotoindividual:hover .nombrealumno p{
     display: inherit;
-}
+} 
 
 /*----CONTACTO------------------------------------------------------------*/
 
@@ -459,29 +459,4 @@ footer {
    padding: 0px 10px;
 }
 
-
-/*-----BLOG-------------------------------------------------------------*/
-form{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-table{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
-    border: 2px solid #c71c24;
-}
-
-.rojo{
-    background-color: #c71c24;
-    color: white;
-}
-
-td{
-    width: 140px;
-}
-
-th{
-    width: 100px;
-}
+/*-------ANIMACIONES--------------------------------------------------------------*/

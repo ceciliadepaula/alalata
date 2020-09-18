@@ -1,0 +1,62 @@
+/*-----BLOG-------------------------------------------------------------*/
+#blog{
+    margin: 90px 0 20px 0;
+}
+
+.notasblog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+}
+
+.notasblog .notadeldia .titulosecundario{
+    padding: 30px 0; 
+    background-color: white;
+    position: sticky;
+    top: 60px;
+    margin-bottom: 0;
+    /* background-color: rebeccapurple; */
+}
+
+.notasblog .notadeldia p{
+    padding: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
+}
+
+.notasblog .proximasnoticias{
+    margin-top: 40px;
+    position: sticky;
+    top: 60px;
+    height: 100vh;
+    /* background-color: rosybrown; */
+    border: 1px solid red;
+}
+
+.notasblog .proximasnoticias .titulotercera{
+    margin-top: 0;
+    padding-top: 40px; 
+    text-align: center;
+}
+
+
+form{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+table{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    border: 2px solid #c71c24;
+    width: 100%;
+}
+
+.rojo{
+    background-color: #c71c24;
+    color: white;
+}
+
+td{
+    width: 140px;
+}
