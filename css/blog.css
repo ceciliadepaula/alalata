@@ -54,3 +54,49 @@ table{
     margin: 15px auto;
     width: 85%;
 }
+
+#cuerpoposteo .rojo{
+    background-color: white;
+    color: #c71c24;
+}
+
+#cuerpoposteo .italica{
+    font-style: italic;
+    width: 60%;
+    margin: 50px 20%;
+    text-align: center;
+}
+
+.notablog{
+    margin: 0 0 80px 0;
+ }
+
+
+
+#cuerpoposteo p{
+    width: 70%;
+    margin-left: 15%;
+}
+
+#cuerpoposteo h2{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.fotosblog{
+    margin: 0;
+    padding: 0;
+}
+
+.fotosblog img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.notablog #presentacion .informacion{
+    width: 70%;
+    margin: 30px 15% 50px 15%;
+    text-align: center;
+}
