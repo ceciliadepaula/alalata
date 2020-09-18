@@ -104,6 +104,19 @@ a:hover{
     z-index: -99;
 }
 
+
+.botonblanco a{
+    color: #c71c24;
+    background-color: whitesmoke;
+    padding: 4px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.botonblanco a:hover{
+    font-weight: normal;
+}
+
 /*-----INTRO-----------------------------------------------------------------*/
 
 #presentacion{
@@ -214,7 +227,6 @@ a:hover{
     display: flex;
     flex-direction: row;
     padding-top: 90px;  
-    padding-bottom: 70px;  
 }
 
 #nosotros .foto{
@@ -250,7 +262,7 @@ a:hover{
 /*-----QUE HACEMOS------------------------------------------------------------*/
 
 #quehacemos{
-    
+    padding-top: 90px;  
     display: flex;
     flex-direction: row;
 }
@@ -354,35 +366,35 @@ a:hover{
 
 /*----------FOTOS ALUMNOS------------------------------------------*/
 
-.trabajosalumnos{
+#trabajosalumnos{
+    padding-top: 60px;  
     text-align: center;
-    margin-top: 80px;
 }
 
-.trabajosalumnos .fotosalumnos{
+#trabajosalumnos .fotosalumnos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0 -5.5%;
 }
 
-.trabajosalumnos .fotosalumnos .fotoindividual{
+#trabajosalumnos .fotosalumnos .fotoindividual{
     height: 400px;
 }
 
-.trabajosalumnos .fotosalumnos .fotoindividual img{
+#trabajosalumnos .fotosalumnos .fotoindividual img{
     height: 400px;
     object-fit: cover;
     width: 100%;
 }
 
-.trabajosalumnos .fotosalumnos .fotoindividual:hover img{
+#trabajosalumnos .fotosalumnos .fotoindividual:hover img{
     transition: 2s ease;
     filter: invert(100%);
     width: 100%;
 }
 
-.trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno{
+#trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno{
     background-color: #c71c24;
     color: white;
     position: relative;
@@ -392,14 +404,14 @@ a:hover{
     border-radius: 50px;
 }
 
-.trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno p{
+#trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno p{
     margin: 0px;
     text-align: center;
     padding: 3px;
     display: none;
 }
 
-.trabajosalumnos .fotosalumnos .fotoindividual:hover .nombrealumno p{
+#trabajosalumnos .fotosalumnos .fotoindividual:hover .nombrealumno p{
     display: inherit;
 } 
 
