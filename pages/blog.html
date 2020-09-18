@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
     <title>Blog / Alalata Fotografía</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
@@ -11,97 +13,35 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="../images/logo-derecho-blanco.svg" alt="Logotipo Alalata">
+        <a href="../index.html"><img class="logo" src="../images/logo-derecho-blanco.svg" alt="Logotipo Alalata"></a>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#presentacion">Nosotros</a></li>
-                <li><a href="../index.html#nuestrapropuesta">Nuestra Propuesta</a></li>
+                <li><a href="../index.html#nosotros">Nosotros</a></li>
+                <li><a href="../index.html#nuestrapropuesta">Nuestra Propuesta</a>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="../index.html#contacto">Contacto</a></li>
             </ul>
         </nav>
+        <div class="sombra"></div>
     </header>
+
     <main>
-        <section class="blog">
+        <section id="blog">
+            <div class="presentacionblog">
+                <h1 class="tituloppal">Artículos <br> estenopeiqueros</h1>
+            </div>
+
             <div class="notasblog">
-                <h2 class="titulosecundario">Los tiempos de exposición en el mundo estenopeico</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente veritatis amet explicabo reiciendis eveniet quam. Blanditiis quia cumque iste beatae eveniet sunt nesciunt ducimus pariatur repellendus nostrum, ipsum ea?</p>
-                <table border="1">
-                    <tr align="center">
-                        <th class="rojo">F/128</th>
-                        <th>Soleado</th>
-                        <th>Pocas nubes</th>
-                        <th>Nublado</th>
-                        <th>Nublado oscuro</th>
-                    </tr>
-                    <tr align="center">
-                        <th>Invierno</th>
-                        <td>15seg</td>
-                        <td>30seg</td>
-                        <td>1min</td>
-                        <td>2min</td>
-                    </tr>
-                    <tr align="center">
-                        <th>Verano</th>
-                        <td>7seg</td>
-                        <td>15seg</td>
-                        <td>30seg</td>
-                        <td>1min</td>
-                    </tr>
-                </table>
-                <br/>
-                <table border="1">
-                    <tr align="center">
-                        <th class="rojo">F/180</th>
-                        <th>Soleado</th>
-                        <th>Pocas nubes</th>
-                        <th>Nublado</th>
-                        <th>Nublado oscuro</th>
-                    </tr>
-                    <tr align="center">
-                        <th>Invierno</th>
-                        <td>30seg</td>
-                        <td>1min</td>
-                        <td>2min</td>
-                        <td>4min</td>
-                    </tr>
-                    <tr align="center">
-                        <th>Verano</th>
-                        <td>15seg</td>
-                        <td>30seg</td>
-                        <td>1min</td>
-                        <td>2min</td>
-                    </tr>
-                </table>
-                <br/>
-                <table border="1">
-                    <tr align="center">
-                        <th class="rojo">F/256</th>
-                        <th>Soleado</th>
-                        <th>Pocas nubes</th>
-                        <th>Nublado</th>
-                        <th>Nublado oscuro</th>
-                    </tr>
-                    <tr align="center">
-                        <th>Invierno</th>
-                        <td>1min</td>
-                        <td>2min</td>
-                        <td>4min</td>
-                        <td>8min</td>
-                    </tr>
-                    <tr align="center">
-                        <th>Verano</th>
-                        <td>30seg</td>
-                        <td>1min</td>
-                        <td>2min</td>
-                        <td>4min</td>
-                    </tr>
-                </table>
-                    <br/>
+                <div class="notadeldia">
+                    <h2 class="titulosecundario">Los tiempos de exposición <br> en el mundo estenopeico</h1>
+                    <p>La cámara estenopeica es un instrumento que nos permite realizar fotografías de un modo muy sencillo. Tiene un mecanismo simple que nos permite limitar el acceso de luz dentro de un espacio oscuro para obtener una imagen negativa. </p>
+                    <p>Se trata de una caja o contenedor de algún material sólido (cartón, metal), cubierto con cinta de aislar a lo largo de su superficie y sobre todo en esquinas estratégicas para impedir el paso de la luz. La caja puede pintarse de negro por dentro para minimizar cualquier reflejo o refracción de luz en el interior, aunque si la caja está bien sellada por fuera no es tan necesario.</p>
+                    <p>Esta cámara funcionará a merced de la luz del día, si hay nubes, si hay sombra, demasiado sol… por eso aconsejo tener una pequeña libretita u hojita donde vayan haciendo sus anotaciones por cada fotografía que tomen.</p>
+                    <p>Aquí les dejo una tabla que explica los tiempos de exposición, es decir los segundos en que hay que dejar pasar la luz por el estenopo.</p>
                     <table border="1">
                         <tr align="center">
-                            <th class="rojo">F/360</th>
+                            <th class="rojo">F/128</th>
                             <th>Soleado</th>
                             <th>Pocas nubes</th>
                             <th>Nublado</th>
@@ -109,34 +49,109 @@
                         </tr>
                         <tr align="center">
                             <th>Invierno</th>
+                            <td>15seg</td>
+                            <td>30seg</td>
+                            <td>1min</td>
                             <td>2min</td>
-                            <td>4min</td>
-                            <td>8min</td>
-                            <td>16min</td>
                         </tr>
                         <tr align="center">
                             <th>Verano</th>
+                            <td>7seg</td>
+                            <td>15seg</td>
+                            <td>30seg</td>
+                            <td>1min</td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <table border="1">
+                        <tr align="center">
+                            <th class="rojo">F/180</th>
+                            <th>Soleado</th>
+                            <th>Pocas nubes</th>
+                            <th>Nublado</th>
+                            <th>Nublado oscuro</th>
+                        </tr>
+                        <tr align="center">
+                            <th>Invierno</th>
+                            <td>30seg</td>
+                            <td>1min</td>
+                            <td>2min</td>
+                            <td>4min</td>
+                        </tr>
+                        <tr align="center">
+                            <th>Verano</th>
+                            <td>15seg</td>
+                            <td>30seg</td>
+                            <td>1min</td>
+                            <td>2min</td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <table border="1">
+                        <tr align="center">
+                            <th class="rojo">F/256</th>
+                            <th>Soleado</th>
+                            <th>Pocas nubes</th>
+                            <th>Nublado</th>
+                            <th>Nublado oscuro</th>
+                        </tr>
+                        <tr align="center">
+                            <th>Invierno</th>
                             <td>1min</td>
                             <td>2min</td>
                             <td>4min</td>
                             <td>8min</td>
                         </tr>
-                </table>
+                        <tr align="center">
+                            <th>Verano</th>
+                            <td>30seg</td>
+                            <td>1min</td>
+                            <td>2min</td>
+                            <td>4min</td>
+                        </tr>
+                    </table>
+                        <br/>
+                        <table border="1">
+                            <tr align="center">
+                                <th class="rojo">F/360</th>
+                                <th>Soleado</th>
+                                <th>Pocas nubes</th>
+                                <th>Nublado</th>
+                                <th>Nublado oscuro</th>
+                            </tr>
+                            <tr align="center">
+                                <th>Invierno</th>
+                                <td>2min</td>
+                                <td>4min</td>
+                                <td>8min</td>
+                                <td>16min</td>
+                            </tr>
+                            <tr align="center">
+                                <th>Verano</th>
+                                <td>1min</td>
+                                <td>2min</td>
+                                <td>4min</td>
+                                <td>8min</td>
+                            </tr>
+                    </table>
+                    <br>
+                    <p>No olviden llevar las anotaciones así cuando lleven su rollo a revelar sabrán que correcciones tendrán que hacer si quieren tomar más y mejores fotos.</p>
+                </div>
+                <div class="proximasnoticias">
+                    <h3 class="titulotercera">Proximamente</h3>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <p class="datosfinales">
-            Alalata / Taller de fotografía estenopeica
-            </br>
-            </br>
-            alalatafotografia@gmail.com
+            <span class="negrita blanca">Alalata Fotografía</span> / alalatafotografia@gmail.com
         </p>
         <div class="iconos">
-            <a href="https://www.facebook.com/alalatafotografia/"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/alalatafotografia/?hl=es-la"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.behance.net/gallery/96872605/Alalata-Fotografia-Estenopeica/"><i class="fab fa-behance-square"></i></a>
+            <a href="https://www.facebook.com/alalatafotografia/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/alalatafotografia/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.behance.net/gallery/96872605/Alalata-Fotografia-Estenopeica/" target="_blank"><i class="fab fa-behance-square"></i></a>
         </div>      
     </footer>
 </body>
