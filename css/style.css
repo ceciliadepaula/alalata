@@ -154,7 +154,8 @@ a:hover{
 
 #presentacion .informacion p{
     margin: 40px 0 30px 0;
-    width: 95%;
+    width: 100%;
+    /*---era 95 porciento para landing page--*/
     animation-duration: 3s;
 }
 
