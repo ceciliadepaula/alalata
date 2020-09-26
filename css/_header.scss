@@ -1,0 +1,91 @@
+header{
+    background-color: $colorppal;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: content-box;
+    a{
+        .logo{
+            width: 150px;
+            padding: 15px 0 15px 5%;
+            float: left;
+            box-sizing: content-box;
+        }
+    }
+    nav{
+        ul{
+            margin-top: 11px;
+            margin-bottom: 0px;
+            position: absolute;
+            right: 5%;
+            top: 5px;
+            li{
+                list-style:none;
+                text-transform: uppercase;   
+                display: inline-block;
+                padding-left: 30px;  
+                a{
+                    text-decoration: none;
+                    color: $colorblanco;
+                }
+                a:hover{
+                    font-weight: bold;
+                    color: $colorblanco;
+                    text-decoration: none;
+                }
+                .dropdown-menu{
+                    a{
+                        padding: 0.7rem;
+                        color: $colorblanco;
+                    }
+                    a:hover{
+                        color: $colorblanco;
+                    }
+                }
+            }
+            .botonblanco{
+                a{
+                    color: $colorppal;
+                    background-color: $colorblanco;
+                    padding: 4px 20px;
+                    border-radius: 50px;
+                    font-weight: bold;
+                }
+                a:hover{
+                    font-weight: normal;
+                    color: $colorppal;
+                }
+            }
+        }
+    }
+    .sombra{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 62px;
+        width: 100%;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
+        z-index: -99;
+    }
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $colorppal;
+}
+
+.nav-link {
+    padding: 0;
+  }
+
+.dropdown-menu {
+    margin: 5px 0 0 0;
+    background-color: $colorppal;
+    border: none;
+    min-width: 15rem;
+    padding: 0.5rem 0;
+    border-radius: 0.25rem;
+}

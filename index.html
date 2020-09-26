@@ -3,170 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Alalata Fotografía</title>
+    <link rel="icon" type="image/svg" href="images/logo-rojo.svg">
+    <!--Hojas de estilo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg" href="images/logo-rojo.svg">
 </head>
 
 <body>
+
     <header>
         <a href="#"><img class="logo" src="images/logo-derecho-blanco.svg" alt="Logotipo Alalata"></a>
         <nav>
-            <ul>
-                <li><a href="index.html#nosotros">Nosotros</a></li>
-                <li><a href="index.html#quehacemos">Requisitos</a></li>
-                <li><a href="index.html#nuestrapropuesta">Contenidos</a></li>
-                <li><a href="index.html#trabajosalumnos">Trabajos de alumnos</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
-                <li class="botonblanco"><a href="pages/blog.html">Blog</a></li>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html#nosotros">Nosotros</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nuestra propuesta</a>
+                    <div class="dropdown-menu">
+                        <a href="index.html#quehacemos">Requisitos</a><br>
+                        <a href="index.html#nuestrapropuesta">Contenidos</a><br>
+                        <a href="index.html#trabajosalumnos">Trabajos de alumnos</a>
+                    </div>
+                <li class="nav-item"><a href="index.html#contacto">Contacto</a></li>
+                <li class="botonblanco nav-item"><a href="pages/blog.html">Blog</a></li>
             </ul>
         </nav>
         <div class="sombra"></div>
     </header>
 
+
     <main>
-        <section id="presentacion">
-            <div class="informacion">
-                <h1 class="tituloppal animate__animated animate__fadeInDown">A la lata, <br> al latero...</h1>
-                <p class="animate__animated animate__fadeInDown">La <span class="negrita roja">fotografía estenopeica</span> es aquella que se captura sin la necesidad de utilizar lentes u objetivos. Requiere de una <span class="negrita roja">cámara oscura</span> que en vez de dejar entrar la luz por un lente, lo hace a través de un pequeño agujero llamado <span class="negrita roja">estenopo</span>, el cual direcciona la luz hasta incidir en una <span class="negrita roja">superficie sensible</span> que se encuentra ubicada en la cara opuesta. 
-                <div class="boton animate__animated  animate__fadeInLeft"><a href="index.html#nosotros">Más información</a></div>
-            </div>
-            <div class="foto">
-                <img src="images/lataestenopeica.png" alt="Cámara estenopeica hecha con lata">
-                <div class=" circulo c1"></div>
-                <div class="circulo c2"></div>
-            </div>
-        </section>
-
-        <section id="nosotros">
-            <div class="informacion">
-                <h2 class="titulosecundario">¿Quiénes somos?</h2>
-                <p><span class="negrita roja">Alalata</span> es una taller de <span class="negrita roja">fotografía estenopeica experimental</span> que nace en 2011 en la ciudad de Santa Fe, Argentina. Está dirigido por Cecilia De Paula y co-dirigido por Marta Yardín.</p>
-            </div>
-            <div class="foto">
-                <img src="images/amigas.jpg" alt="Amigas en un picnic en una plaza">
-            </div>
-        </section>
-
-        <section id="quehacemos">
-            <div class="informacion">
-                <h2 class="titulosecundario">¿Qué hacemos?</h2>
-                <p>En <span class="negrita roja">Alalata</span> te enseñamos a construir tu propia cámara fotográfica, a sacar fotos y a revelarlas en el cuarto oscuro.
-                <ul>
-                    <li>No hay requisitos para la participación en el taller.</li>
-                    <li>No se requieren conocimientos previos sobre fotografía.</li>
-                    <li>Todos los materiales están incluidos.</li>
-                    <li>Se entrega certificado.</li>
-                </ul>
-                </p>
-            </div>
-            <div class="foto">
-                <img src="images/recorado_unl.jpg" alt="Rectorado de la Universidad Nacional del Litoral, Santa Fe">
-            </div>
-        </section>
-
-        <section id="nuestrapropuesta">
-            <div class="informacion">
-                <h2 class="titulosecundario">¿Qué vamos a enseñarte?</h2>
-                <p>Este taller está orientado a todas aquellas personas que quieran aprender a construir su propia cámara fotográfica y experimentar con ella mediante la técnica de la fotografía estenopeica. Construiremos nuestra propia cámara y sacaremos fotos con ella utilizando papel fotosensible que luego revelaremos en el cuarto oscuro. Con nosotros aprenderas:</p>
-            </div>
-            <ul>
-                <li>
-                    <img class="iconos-svg" src="images/libro.svg" alt="Ícono de un libro abierto">
-                    <h3>Fundamentos teóricos</h3>
-                    <p>Conceptos teóricos sobre la formación de la imagen. ¿Qué es la fotografía estenopeica? ¿Cómo se forma la imagen adentro de la cámara? Conceptos que intervienen en la captura de la imagen. Las singularidades de la fotografía estenopeica.</p>
-                </li>
-                <li>
-                    <img class="iconos-svg" src="images/construccion.svg" alt="Ícono de una calculadora y un cutter">
-                    <h3>Construcción de la cámara</h3>
-                    <p>Conceptos teóricos y prácticos para la construcción de la cámara estenopeica. Cálculos que intervienen en la construcción y uso de la cámara. Construcción de la cámara en el taller.</p>
-                </li>
-                <li>
-                    <img class="iconos-svg" src="images/doslatas.svg" alt="Ícono de dos cámaras estenopeicas">
-                    <h3>Uso de la cámara</h3>
-                    <p>Salidas fotográficas. Tiempos de exposición según condiciones climáticas. Encuadres.</p>
-                </li>
-                <li>
-                    <img class="iconos-svg" src="images/revelado.svg" alt="Ícono de una foto colgando">
-                    <h3>Revelado</h3>
-                    <p>Conceptos teóricos y prácticos para el revelado analógico de papel fotosensible. Preparación de los químicos y revelado manual en el cuarto oscuro.</p>
-                </li>
-                <li>
-                    <img class="iconos-svg" src="images/compu.svg" alt="Ícono de una notebook">
-                    <h3>Positivado</h3>
-                    <p>Positivado analógico y digital. Positivado por contacto. Positivado digital con Photoshop.</p>
-                </li>
-            </ul>
-            <div id="trabajosalumnos">
-                <h3 class="titulotercera">Trabajos de alumnos que pasaron por Alalata</h3>
-                <div class="fotosalumnos">
-                    <div class="fotoindividual">
-                        <img src="images/belen-frutos-neg.jpg" alt="Autorretrato, de Belen Frutos">
-                        <div class="nombrealumno">
-                            <p>María Belén Frutos</p>    
-                        </div>
-                    </div>
-                    <div class="fotoindividual">
-                        <img src="images/claudio-mangini-neg.jpg" alt="Camara Minolta, de Claudio Mangini">
-                        <div class="nombrealumno">
-                            <p>Claudio Mangini</p>    
-                        </div>
-                    </div>
-                    <div class="fotoindividual">
-                        <img src="images/liliana-mesquida-neg.jpg" alt="Foto con modelo, de Liliana Mesquida">
-                        <div class="nombrealumno">
-                            <p>Liliana Mesquida</p>    
-                        </div>
-                    </div>
-                    <div class="fotoindividual">
-                        <img src="images/maria-maciel-neg.jpg" alt="Dos mujeres en el centro, de Maria Maciel">
-                        <div class="nombrealumno">
-                            <p>María Maciel</p>    
-                        </div>
-                    </div>
-                    <div class="fotoindividual">
-                        <img src="images/pilmayquen-paserini-neg.jpg" alt="Plantas, de Pilmayquen Paserini">
-                        <div class="nombrealumno">
-                            <p>Pilmayquen Paserini</p>    
-                        </div>
-                    </div>
-                    <div class="fotoindividual">
-                        <img src="images/sonia-maciel-neg.jpg" alt="Hombre en la costanera, de Sonia Maciel">
-                        <div class="nombrealumno">
-                            <p>Sonia Maciel</p>    
-                        </div>
-                    </div>
-                    <div class="fotoindividual">
-                        <img src="images/lorena_nittoli.jpg" alt="Edificio en contrapicado, de Lorena Nittoli">
-                        <div class="nombrealumno">
-                            <p>Lorena Nittoli</p>    
-                        </div>
-                    </div>
-                    <div class="fotoindividual">
-                        <img src="images/evange_chiaraviglio.jpg" alt="Calle 9 de Julio desde el balcón, de Evange Chiaraviglio">
-                        <div class="nombrealumno">
-                            <p>Evange Chiaraviglio</p>    
-                        </div>
-                    </div>
-                    <div class="fotoindividual">
-                        <img src="images/claudio_mangini_auto.jpg" alt="Autorretrato, de Claudio Mangini">
-                        <div class="nombrealumno">
-                            <p>Claudio Mangini</p>    
-                        </div>
-                    </div>
+        <section id="presentacion" class="container-fluid">
+            <div class="row">
+                <div class="informacion col-sm-12 col-lg-6">
+                    <h1 class="tituloppal animate__animated animate__fadeInDown">A la lata, <br> al latero...</h1>
+                    <p class="animate__animated animate__fadeInDown">La <span class="negrita roja">fotografía estenopeica</span> es aquella que se captura sin la necesidad de utilizar lentes u objetivos. Requiere de una <span class="negrita roja">cámara oscura</span> que en vez de dejar entrar la luz por un lente, lo hace a través de un pequeño agujero llamado <span class="negrita roja">estenopo</span>, el cual direcciona la luz hasta incidir en una <span class="negrita roja">superficie sensible</span> que se encuentra ubicada en la cara opuesta. 
+                    <div class="boton animate__animated  animate__fadeInLeft"><a href="index.html#nosotros">Más información</a></div>
+                </div>
+                <div class="foto col-sm-12 col-lg-6">
+                    <img src="images/lataestenopeica.png" alt="Cámara estenopeica hecha con lata">
+                    <div class=" circulo c1"></div>
+                    <div class="circulo c2"></div>
                 </div>
             </div>
         </section>
 
-        <section id="contacto">
+        <section id="nosotros" class="container-fluid">
+            <div class="row">
+                <div class="informacion col-sm-12 col-lg-6">
+                    <h2 class="titulosecundario">¿Quiénes somos?</h2>
+                    <p><span class="negrita roja">Alalata</span> es una taller de <span class="negrita roja">fotografía estenopeica experimental</span> que nace en 2011 en la ciudad de Santa Fe, Argentina. Está dirigido por Cecilia De Paula y co-dirigido por Marta Yardín.</p>
+                </div>
+                <div class="foto col-sm-12 col-lg-6">
+                    <img src="images/amigas.jpg" alt="Amigas en un picnic en una plaza">
+                </div>
+            </div>
+        </section>
+
+        <section id="quehacemos" class="container-fluid">
+            <div class="row">
+                <div class="informacion col-xd-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <h2 class="titulosecundario">¿Qué hacemos?</h2>
+                    <p>En <span class="negrita roja">Alalata</span> te enseñamos a construir tu propia cámara fotográfica, a sacar fotos y a revelarlas en el cuarto oscuro.</p>
+                    <ul>
+                        <li>No hay requisitos para la participación en el taller.</li>
+                        <li>No se requieren conocimientos previos sobre fotografía.</li>
+                        <li>Todos los materiales están incluidos.</li>
+                        <li>Se entrega certificado.</li>
+                    </ul> 
+                </div>
+                <div class="foto col-xd-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <img src="images/recorado_unl.jpg" alt="Rectorado de la Universidad Nacional del Litoral, Santa Fe">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<!--    
+       
+
+
+         <section id="quehacemos" class="container">
+            <div class="row">
+                <div class="informacion col-xd-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <h2 class="titulosecundario">¿Qué hacemos?</h2>
+                    <p>En <span class="negrita roja">Alalata</span> te enseñamos a construir tu propia cámara fotográfica, a sacar fotos y a revelarlas en el cuarto oscuro.
+                    <ul>
+                        <li>No hay requisitos para la participación en el taller.</li>
+                        <li>No se requieren conocimientos previos sobre fotografía.</li>
+                        <li>Todos los materiales están incluidos.</li>
+                        <li>Se entrega certificado.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="foto col-xd-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <img src="images/recorado_unl.jpg" alt="Rectorado de la Universidad Nacional del Litoral, Santa Fe">
+                </div>
+            </div>
+        </section> -->
+
+       <!--  <section id="nuestrapropuesta" class="container">
+            <div class="row">
+                <div class="informacion col-12">
+                    <h2 class="titulosecundario">¿Qué vamos a enseñarte?</h2>
+                    <p>Este taller está orientado a todas aquellas personas que quieran aprender a construir su propia cámara fotográfica y experimentar con ella mediante la técnica de la fotografía estenopeica. Construiremos nuestra propia cámara y sacaremos fotos con ella utilizando papel fotosensible que luego revelaremos en el cuarto oscuro. Con nosotros aprenderas:</p>
+                </div>
+                <ul class="row">
+                    <li class="col-xd-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                        <img class="iconos-svg" src="images/libro.svg" alt="Ícono de un libro abierto">
+                        <h3>Fundamentos teóricos</h3>
+                        <p>Conceptos teóricos sobre la formación de la imagen. ¿Qué es la fotografía estenopeica? ¿Cómo se forma la imagen adentro de la cámara? Conceptos que intervienen en la captura de la imagen. Las singularidades de la fotografía estenopeica.</p>
+                    </li>
+                    <li class="col-xd-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                        <img class="iconos-svg" src="images/construccion.svg" alt="Ícono de una calculadora y un cutter">
+                        <h3>Construcción de la cámara</h3>
+                        <p>Conceptos teóricos y prácticos para la construcción de la cámara estenopeica. Cálculos que intervienen en la construcción y uso de la cámara. Construcción de la cámara en el taller.</p>
+                    </li>
+                    <li class="col-xd-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                        <img class="iconos-svg" src="images/doslatas.svg" alt="Ícono de dos cámaras estenopeicas">
+                        <h3>Uso de la cámara</h3>
+                        <p>Salidas fotográficas. Tiempos de exposición según condiciones climáticas. Encuadres.</p>
+                    </li>
+                    <li class="col-xd-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                        <img class="iconos-svg" src="images/revelado.svg" alt="Ícono de una foto colgando">
+                        <h3>Revelado</h3>
+                        <p>Conceptos teóricos y prácticos para el revelado analógico de papel fotosensible. Preparación de los químicos y revelado manual en el cuarto oscuro.</p>
+                    </li>
+                    <li class="col-xd-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                        <img class="iconos-svg" src="images/compu.svg" alt="Ícono de una notebook">
+                        <h3>Positivado</h3>
+                        <p>Positivado analógico y digital. Positivado por contacto. Positivado digital con Photoshop.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div id="trabajosalumnos">
+                    <h3 class="titulotercera">Trabajos de alumnos que pasaron por Alalata</h3>
+                    <div class="fotosalumnos">
+                        <div class="fotoindividual">
+                            <img src="images/belen-frutos-neg.jpg" alt="Autorretrato, de Belen Frutos">
+                            <div class="nombrealumno">
+                                <p>María Belén Frutos</p>    
+                            </div>
+                        </div>
+                        <div class="fotoindividual">
+                            <img src="images/claudio-mangini-neg.jpg" alt="Camara Minolta, de Claudio Mangini">
+                            <div class="nombrealumno">
+                                <p>Claudio Mangini</p>    
+                            </div>
+                        </div>
+                        <div class="fotoindividual">
+                            <img src="images/liliana-mesquida-neg.jpg" alt="Foto con modelo, de Liliana Mesquida">
+                            <div class="nombrealumno">
+                                <p>Liliana Mesquida</p>    
+                            </div>
+                        </div>
+                        <div class="fotoindividual">
+                            <img src="images/maria-maciel-neg.jpg" alt="Dos mujeres en el centro, de Maria Maciel">
+                            <div class="nombrealumno">
+                                <p>María Maciel</p>    
+                            </div>
+                        </div>
+                        <div class="fotoindividual">
+                            <img src="images/pilmayquen-paserini-neg.jpg" alt="Plantas, de Pilmayquen Paserini">
+                            <div class="nombrealumno">
+                                <p>Pilmayquen Paserini</p>    
+                            </div>
+                        </div>
+                        <div class="fotoindividual">
+                            <img src="images/sonia-maciel-neg.jpg" alt="Hombre en la costanera, de Sonia Maciel">
+                            <div class="nombrealumno">
+                                <p>Sonia Maciel</p>    
+                            </div>
+                        </div>
+                        <div class="fotoindividual">
+                            <img src="images/lorena_nittoli.jpg" alt="Edificio en contrapicado, de Lorena Nittoli">
+                            <div class="nombrealumno">
+                                <p>Lorena Nittoli</p>    
+                            </div>
+                        </div>
+                        <div class="fotoindividual">
+                            <img src="images/evange_chiaraviglio.jpg" alt="Calle 9 de Julio desde el balcón, de Evange Chiaraviglio">
+                            <div class="nombrealumno">
+                                <p>Evange Chiaraviglio</p>    
+                            </div>
+                        </div>
+                        <div class="fotoindividual">
+                            <img src="images/claudio_mangini_auto.jpg" alt="Autorretrato, de Claudio Mangini">
+                            <div class="nombrealumno">
+                                <p>Claudio Mangini</p>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+       <!--  <section id="contacto">
             <div class="informacion">
                 <h2 class="titulosecundario">Contacto</h2>
-                <!-- <p>Dejanos tu mensaje</p> -->
                 <form action="index.html" method="POST" name="formulario" enctype="application/x-www-form-urlencoded">
                     <label for="nombre">Nombre: <input type="text" name="nombre" size="50"></label>
                     <br>
@@ -215,10 +256,10 @@
                 </form>
             </div>
             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108722.54716874225!2d-60.7762977542046!3d-31.61797740172731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe!5e0!3m2!1ses-419!2sar!4v1599092604621!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>       
+        </section>        -->
     </main>
 
-    <footer>
+    <!-- <footer>
         <p class="datosfinales">
             <span class="negrita blanca">Alalata Fotografía</span> / alalatafotografia@gmail.com
         </p>
@@ -227,7 +268,12 @@
             <a href="https://www.instagram.com/alalatafotografia/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.behance.net/gallery/96872605/Alalata-Fotografia-Estenopeica/" target="_blank"><i class="fab fa-behance-square"></i></a>
         </div>      
-    </footer>
+    </footer> -->
+
+    <!----BOOTSTRAP---->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 </html>

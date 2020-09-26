@@ -1,475 +1,502 @@
-/*-----GENERALES-------------------------------------------------------------*/
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Work Sans", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.tituloppal {
+  color: #c71c24;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 900;
+  margin: 0px;
+}
+
+.titulosecundario {
+  font-size: 3rem;
+  color: #c71c24;
+  font-weight: bold;
+}
+
+.titulotercera {
+  font-size: 2rem;
+  color: #c71c24;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.roja {
+  color: #c71c24;
+}
+
+.blanca {
+  color: whitesmoke;
+}
+
+header {
+  background-color: #c71c24;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+header a .logo {
+  width: 150px;
+  padding: 15px 0 15px 5%;
+  float: left;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+header nav ul {
+  margin-top: 11px;
+  margin-bottom: 0px;
+  position: absolute;
+  right: 5%;
+  top: 5px;
+}
+
+header nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-left: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+header nav ul li a:hover {
+  font-weight: bold;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+header nav ul li .dropdown-menu a {
+  padding: 0.7rem;
+  color: whitesmoke;
+}
+
+header nav ul li .dropdown-menu a:hover {
+  color: whitesmoke;
+}
+
+header nav ul .botonblanco a {
+  color: #c71c24;
+  background-color: whitesmoke;
+  padding: 4px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+header nav ul .botonblanco a:hover {
+  font-weight: normal;
+  color: #c71c24;
+}
+
+header .sombra {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 62px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
+  z-index: -99;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #c71c24;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.dropdown-menu {
+  margin: 5px 0 0 0;
+  background-color: #c71c24;
+  border: none;
+  min-width: 15rem;
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
   }
-
-.tituloppal{
-    color: #c71c24;
-    font-size: 6rem;
-    line-height: 6rem;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 900;
-    margin: 0px;
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
 }
 
-.titulosecundario{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 3rem;
-    color: #c71c24;
+@keyframes mover {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
 }
 
-.titulotercera{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 2rem;
-    color: #c71c24;
+@-webkit-keyframes achicar {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
-p{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.4rem;
+@keyframes achicar {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
-.negrita{
-    font-weight: bold;
+@-webkit-keyframes achicar2 {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 
-.roja{
-    color: #c71c24;
+@keyframes achicar2 {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 
-.blanca{
-    color: white;
+main {
+  margin: 5%;
+  position: relative;
+  top: 40px;
 }
 
-/*----HEADER--------------------------------------------------------------*/
-main{
-    margin: 5%;
-    position: relative;
-    top: 40px;
+main #presentacion, main .container {
+  margin: 90px 0 20px 0;
 }
 
-header{
-    background-color: #c71c24;
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+main #presentacion .row .informacion, main .container .row .informacion {
+  float: left;
+  width: 50%;
+  padding: 0;
 }
 
-.logo{
-    width: 150px;
-    padding: 15px 0 15px 5%;
-    float: left;
+main #presentacion .row .informacion h1, main .container .row .informacion h1 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
-nav ul{
-    position: absolute;
-    right: 5%;
-    top: 5px;
+main #presentacion .row .informacion p, main .container .row .informacion p {
+  margin: 40px 0 30px 0;
+  width: 100%;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
-nav ul li{
-    font-family: 'Work Sans', sans-serif;
-    list-style:none;
-    text-transform: uppercase;   
-    display: inline-block;
-    padding-left: 30px;  
+main #presentacion .row .informacion .boton, main .container .row .informacion .boton {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  background-color: #c71c24;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 7px;
+  width: 200px;
+  text-align: center;
+  border-radius: 50px;
+  text-transform: uppercase;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+main #presentacion .row .informacion .boton a, main .container .row .informacion .boton a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
-a:hover{
-    font-weight: bold;
+main #presentacion .row .informacion .boton a:hover, main .container .row .informacion .boton a:hover {
+  font-weight: bold;
 }
 
-.sombra{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    height: 62px;
-    width: 100%;
-    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
-    z-index: -99;
+main #presentacion .row .foto, main .container .row .foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  height: 470px;
+  padding: 0 60px 0 0;
 }
 
-
-.botonblanco a{
-    color: #c71c24;
-    background-color: whitesmoke;
-    padding: 4px 20px;
-    border-radius: 50px;
-    font-weight: bold;
+main #presentacion .row .foto img, main .container .row .foto img {
+  height: 450px;
+  z-index: 99;
+  -webkit-animation: mover 6s infinite;
+          animation: mover 6s infinite;
 }
 
-.botonblanco a:hover{
-    font-weight: normal;
+main #presentacion .row .foto .circulo, main .container .row .foto .circulo {
+  border-radius: 50%;
 }
 
-/*-----INTRO-----------------------------------------------------------------*/
-
-#presentacion{
-    margin: 90px 0 20px 0;
+main #presentacion .row .foto .c1, main .container .row .foto .c1 {
+  -webkit-animation: achicar 5s infinite;
+          animation: achicar 5s infinite;
+  background: #c71c24;
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  top: -240px;
+  right: -160px;
 }
 
-#presentacion .informacion{
-    float: left;
-    width: 50%;
+main #presentacion .row .foto .c2, main .container .row .foto .c2 {
+  -webkit-animation: achicar2 6s infinite;
+          animation: achicar2 6s infinite;
+  background: whitesmoke;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -100px;
+  right: -30px;
 }
 
-#presentacion .informacion .tituloppal{
-    animation-duration: 3s;
+main #nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@keyframes mover{
-    0%{transform: rotate(20deg);}
-    50%{transform: rotate(25deg); }
-    100%{transform: rotate(20deg);}
+main #nosotros .row .informacion {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#presentacion .foto{
-    display: flex;
-    flex-direction: column;
-    height: 470px;
+main #nosotros .row .informacion p {
+  padding: 1rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1rem;
 }
 
-#presentacion .foto img{
-    height: 450px;
-    align-self: center;
-    z-index: 99;
-    animation: mover 6s infinite;
-    /* transform: rotate(25deg); */
+main #nosotros .row .foto {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#presentacion .informacion p{
-    margin: 40px 0 30px 0;
-    width: 100%;
-    /*---era 95 porciento para landing page--*/
-    animation-duration: 3s;
+main #nosotros .row .foto img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#presentacion .informacion .boton{
-    animation-duration: 3s;
-    animation-delay: 2s;
+main #nosotros .row .foto img:hover {
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.boton{
-    background-color: #c71c24;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color:white;
-    padding: 7px;
-    width: 200px;
-    text-align: center;
-    border-radius: 50px;
-    text-transform: uppercase;
+main #quehacemos {
+  padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-
-
-.boton:hover{
-    font-weight: bold;
+main #quehacemos .row .informacion {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@keyframes achicar{
-    0%{transform: scale(1);}
-    50%{transform: scale(0.9);}
-    100%{transform: scale(1);}
+main #quehacemos .row .informacion p {
+  padding: 0;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@keyframes achicar2{
-    0%{transform: scale(0.8);}
-    50%{transform: scale(1);}
-    100%{transform: scale(0.8);}
+main #quehacemos .row .informacion ul {
+  list-style: none;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 16px;
+  padding: 0;
 }
 
-.circulo{
-    border-radius: 50%;
+main #quehacemos .row .informacion ul li::before {
+  content: "\2022";
+  color: #c71c24;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
-.c1{
-    animation: achicar 5s infinite;
-    background:  #c71c24;
-    width: 650px;
-    height: 650px;
-    position: absolute;
-    top: -240px;
-    right: -160px;
-    
+main #quehacemos .row .foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.c2{
-    animation: achicar2 6s infinite;
-    background:  white;
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    top: -100px;
-    right: -30px;
+main #quehacemos .row .foto img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: none;
+          animation: none;
 }
 
-
-
-/*-----NOSOTROS-------------------------------------------------------------*/
-
-#nosotros{
-    display: flex;
-    flex-direction: row;
-    padding-top: 90px;  
+main #quehacemos .row .foto img:hover {
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#nosotros .foto{
-    order: -1;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-#nosotros .foto img{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    object-fit: cover;
-    align-self: center;
-} 
-
-#nosotros .informacion{
-    text-align: center;
-    width: 50%;
-    align-self: center;   
-}
-
-#nosotros .foto img:hover{
-    transition: 2s ease;
-    filter: invert(100%);
-}
-
-#nosotros .informacion p{
-    padding: 0 5%;
-}
-
-/*-----QUE HACEMOS------------------------------------------------------------*/
-
-#quehacemos{
-    padding-top: 90px;  
-    display: flex;
-    flex-direction: row;
-}
-
-#quehacemos .informacion{
-    align-self: center;
-    float: left;
-    width: 50%;
-    text-align: center;
-}
-
-#quehacemos p{
-    padding: 0 5%;
-}
-
-
-#quehacemos .informacion ul{
-    list-style: none;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-left: 16px;
-    padding: 0;
-}
-
-#quehacemos .informacion ul li::before{
-    content: "\2022";
-    color: #c71c24;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
-#quehacemos .foto{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
- }
-
- #quehacemos .foto img{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    object-fit: cover;
-    align-self: center;
-} 
-
-
-#quehacemos .foto img:hover{
-    transition: 2s ease;
-    filter: invert(100%);
-}
-
-
-/*-----LO QUE TE ENSEÑAMOS------------------------------------------*/
-
- #nuestrapropuesta .informacion .titulosecundario{
-    margin-top: 90px;
-}
-
-#nuestrapropuesta .informacion{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-}
-
-#nuestrapropuesta .informacion p{
-    width: 60%;
-    align-self: center;
-    margin: -10px 0 50px 0;
-}
-
-#nuestrapropuesta ul{
-    list-style: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-}
-
-#nuestrapropuesta ul li{
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    margin: 0px;
-    padding: 0 10px;
-    width: 20%;
-}
-
-.iconos-svg{
-    height: 120px;
-    margin: 0;
-    padding: 0;
-}
-
-#nuestrapropuesta ul li h3{
-    color: #c71c24;
-}
-
-/*----------FOTOS ALUMNOS------------------------------------------*/
-
-#trabajosalumnos{
-    padding-top: 60px;  
-    text-align: center;
-}
-
-#trabajosalumnos .fotosalumnos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 0 -5.5%;
-}
-
-#trabajosalumnos .fotosalumnos .fotoindividual{
-    height: 400px;
-}
-
-#trabajosalumnos .fotosalumnos .fotoindividual img{
-    height: 400px;
-    object-fit: cover;
-    width: 100%;
-}
-
-#trabajosalumnos .fotosalumnos .fotoindividual:hover img{
-    transition: 2s ease;
-    filter: invert(100%);
-    width: 100%;
-}
-
-#trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno{
-    background-color: #c71c24;
-    color: white;
-    position: relative;
-    bottom: 50px;
-    width: 90%;
-    margin: 0 5%;
-    border-radius: 50px;
-}
-
-#trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno p{
-    margin: 0px;
-    text-align: center;
-    padding: 3px;
+@media (max-width: 990px) {
+  main #presentacion .row .foto, main .container .row .foto {
     display: none;
+  }
+  main #nosotros .row .informacion {
+    margin-top: 50px;
+  }
+  main #quehacemos .foto {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  main #quehacemos .informacion {
+    margin-top: 50px;
+  }
 }
-
-#trabajosalumnos .fotosalumnos .fotoindividual:hover .nombrealumno p{
-    display: inherit;
-} 
-
-/*----CONTACTO------------------------------------------------------------*/
-
-#contacto {
-    text-align: right;
-    display: flex;
-    flex-direction: row;
-    padding: 80px 0 0 0;
-}
-
-#contacto .informacion{
-    width: 50%;
-    margin-right: 5%;
-}
-
-#contacto .mapa{
-    height: 600px;
-    width: 50%;
-}
-
-#provincia{
-    font-family: 'Work Sans', sans-serif;
-}
-
-form .boton{
-    border: 0px;
-}
-
-
-
-/*-----FOOTER-------------------------------------------------------------*/
-footer {
-    background-color: #c71c24;
-    color: white;
-    padding: 7px;
-    display: flex;
-    flex-direction: row;
-    padding: 15px 0;
-}
-
-.datosfinales{
-    margin: 0 5%;
-    width: 50%;
-}
-
-.iconos{
-    width: 50%;
-    margin: 0 5%;
-    text-align: right;
-    align-self: center; 
-}
-
-.iconos a{
-   font-size: 1.5rem;
-   padding: 0px 10px;
-}
-
-/*-------ANIMACIONES--------------------------------------------------------------*/
+/*# sourceMappingURL=style.css.map */

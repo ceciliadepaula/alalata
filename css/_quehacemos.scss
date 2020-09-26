@@ -1,0 +1,56 @@
+main{
+    #quehacemos{
+        padding-top: 90px;  
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box; 
+        .row{
+            .informacion{
+                align-self: center;
+                text-align: center;
+                box-sizing: border-box; 
+                p{
+                    padding: 0;
+                    margin-top: 1.25rem;
+                    margin-bottom: 1.25rem;
+                    box-sizing: border-box; 
+                }
+                ul{
+                    list-style: none;
+                    font-family: $fuente;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin-left: 16px;
+                    padding: 0; 
+                    li::before{
+                        content: "\2022";
+                        color: $colorppal;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+            }
+            .foto{
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box; 
+                img{
+                    width: 500px;
+                    height: 500px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    align-self: center;
+                    box-sizing: border-box; 
+                    animation:none;
+                }
+                img:hover{
+                    transition: 2s ease;
+                    filter: invert(100%);   
+                    box-sizing: border-box; 
+                }
+            }
+        }
+    }
+}
