@@ -483,6 +483,128 @@ main #quehacemos .row .foto img:hover {
           box-sizing: border-box;
 }
 
+main #nuestrapropuesta .informacion {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
+}
+
+main #nuestrapropuesta .informacion .titulosecundario {
+  margin-top: 90px;
+}
+
+main #nuestrapropuesta .informacion p {
+  padding: 1rem 0;
+  width: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+main #nuestrapropuesta ul.row {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #nuestrapropuesta ul.row li {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding: 0 10px;
+  width: 20%;
+}
+
+main #nuestrapropuesta ul.row li .iconos-svg {
+  height: 120px;
+  margin: 0;
+  padding: 0;
+}
+
+main #nuestrapropuesta ul.row li h3 {
+  color: #c71c24;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+main #nuestrapropuesta #trabajosalumnos {
+  padding-top: 60px;
+  text-align: center;
+  /*  .fotoindividual:hover{
+                    img{
+                        transition: 2s ease;
+                        filter: invert(100%);
+                        width: 100%;
+                    }
+                    .nombrealumno{
+                        p{
+                            display: inherit;
+                        }
+                    }
+                } */
+}
+
+main #nuestrapropuesta #trabajosalumnos .titulotercera {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+main #nuestrapropuesta #trabajosalumnos .fotosalumnos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  margin: 0;
+}
+
+main #nuestrapropuesta #trabajosalumnos .fotoindividual {
+  height: 400px;
+}
+
+main #nuestrapropuesta #trabajosalumnos .fotoindividual .img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+main #nuestrapropuesta #trabajosalumnos .fotoindividual .nombrealumno {
+  background-color: #c71c24;
+  color: white;
+  position: relative;
+  bottom: 50px;
+  width: 90%;
+  margin: 0 5%;
+  border-radius: 50px;
+}
+
+main #nuestrapropuesta #trabajosalumnos .fotoindividual .nombrealumno p {
+  margin: 0px;
+  text-align: center;
+  padding: 3px;
+  display: none;
+}
+
 @media (max-width: 990px) {
   main #presentacion .row .foto, main .container .row .foto {
     display: none;
