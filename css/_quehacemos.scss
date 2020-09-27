@@ -57,6 +57,8 @@ main{
         }
     }
     #nuestrapropuesta{
+        height: 100%;
+
         .informacion{
             text-align: center;
             display: flex;
@@ -102,14 +104,15 @@ main{
         #trabajosalumnos{
             padding-top: 90px;  
             text-align: center;
+            
             .titulotercera{
                 font-family: $fuente;
                 font-weight: bold;
                 padding-bottom: 2rem;  
             }
             .fotosalumnos{
-                height: 400px;
-                width: 100%;
+                width: 122%;
+                margin: 0 -11%;
                 .fotoindividual{
                     height: 400px;
                     width: 100%;

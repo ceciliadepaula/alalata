@@ -1,0 +1,72 @@
+#contacto{
+    /* text-align: right; */
+    text-align: center;
+
+    
+/*     display: flex;
+    flex-direction: row; */
+    padding: 80px 0 0 0;
+    margin: initial;
+    .row{
+        .informacion{
+            float: left;
+            width: 100%;
+            padding: 0;
+            h2{
+
+            }
+            form{
+                text-align: left;
+                width: 100%;
+                margin: 0 5% 0 0;
+                .boton{
+                    border: 0px;
+                    color: $colorblanco;
+                    animation-duration: 3s;
+                    animation-delay: 2s;
+                    background-color: $colorppal;
+                    font-family: $fuentebotones;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    padding: 7px;
+                    width: 200px;
+                    text-align: center;
+                    border-radius: 50px;
+                    text-transform: uppercase;
+                }
+                .boton:hover{
+                    font-weight: bold;
+                }
+                #provincia{
+                    font-family: 'Work Sans', sans-serif;
+                }
+            }
+        }
+        .mapa{
+            height: 600px;
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+        }
+    }
+}
+
+label{
+    width: 100%;
+}
+.completar {
+    display: flex;
+    width: 100%;
+
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.check{
+    position: relative;
+
+}

@@ -592,6 +592,10 @@ main #quehacemos .row .foto img:hover {
           box-sizing: border-box;
 }
 
+main #nuestrapropuesta {
+  height: 100%;
+}
+
 main #nuestrapropuesta .informacion {
   text-align: center;
   display: -webkit-box;
@@ -665,8 +669,8 @@ main #nuestrapropuesta #trabajosalumnos .titulotercera {
 }
 
 main #nuestrapropuesta #trabajosalumnos .fotosalumnos {
-  height: 400px;
-  width: 100%;
+  width: 122%;
+  margin: 0 -11%;
 }
 
 main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual {
@@ -708,6 +712,81 @@ main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual:hover img 
 
 main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual:hover .nombrealumno p {
   display: inherit;
+}
+
+#contacto {
+  /* text-align: right; */
+  text-align: center;
+  /*     display: flex;
+    flex-direction: row; */
+  padding: 80px 0 0 0;
+  margin: initial;
+}
+
+#contacto .row .informacion {
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+
+#contacto .row .informacion form {
+  text-align: left;
+  width: 100%;
+  margin: 0 5% 0 0;
+}
+
+#contacto .row .informacion form .boton {
+  border: 0px;
+  color: whitesmoke;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  background-color: #c71c24;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 7px;
+  width: 200px;
+  text-align: center;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+#contacto .row .informacion form .boton:hover {
+  font-weight: bold;
+}
+
+#contacto .row .informacion form #provincia {
+  font-family: 'Work Sans', sans-serif;
+}
+
+#contacto .row .mapa {
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+label {
+  width: 100%;
+}
+
+.completar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.check {
+  position: relative;
 }
 
 /*------------------PANTALLA 1024px--------------------*/
@@ -781,6 +860,16 @@ main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual:hover .nom
   }
   main #nuestrapropuesta ul.row li {
     width: 20%;
+  }
+  main #nuestrapropuesta #trabajosalumnos .fotosalumnos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    margin: initial;
+    width: 100%;
   }
 }
 
