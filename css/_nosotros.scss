@@ -2,8 +2,11 @@ main{
     #nosotros{
         display: flex;
         flex-direction: row;
-        padding-top: 90px; 
         box-sizing: border-box; 
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 90px; 
         .row{
             .informacion{
                 text-align: center;
@@ -23,7 +26,7 @@ main{
                 box-sizing: border-box;
                 img{
                     width: 100%;
-                    /* height: ; */
+                    max-width: 500px;
                     border-radius: 50%;
                     object-fit: cover;
                     align-self: center;

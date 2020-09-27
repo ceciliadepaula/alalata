@@ -378,7 +378,7 @@ main {
   margin: 5%;
   position: relative;
   top: 40px;
-  width: 100%;
+  width: 90%;
 }
 
 main #presentacion, main .container {
@@ -387,7 +387,6 @@ main #presentacion, main .container {
 
 main #presentacion .row .informacion, main .container .row .informacion {
   float: left;
-  /* width: 50%; */
   width: 100%;
   padding: 0;
 }
@@ -395,6 +394,8 @@ main #presentacion .row .informacion, main .container .row .informacion {
 main #presentacion .row .informacion h1, main .container .row .informacion h1 {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 main #presentacion .row .informacion p, main .container .row .informacion p {
@@ -441,9 +442,12 @@ main #nosotros {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 90px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
 }
 
 main #nosotros .row .informacion {
@@ -480,7 +484,7 @@ main #nosotros .row .foto {
 
 main #nosotros .row .foto img {
   width: 100%;
-  /* height: ; */
+  max-width: 500px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -520,6 +524,7 @@ main #quehacemos .row .informacion {
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-top: 50px;
 }
 
 main #quehacemos .row .informacion p {
@@ -558,11 +563,14 @@ main #quehacemos .row .foto {
           flex-direction: column;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 main #quehacemos .row .foto img {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -602,7 +610,7 @@ main #nuestrapropuesta .informacion .titulosecundario {
 
 main #nuestrapropuesta .informacion p {
   padding: 1rem 0;
-  width: 60%;
+  width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -618,10 +626,10 @@ main #nuestrapropuesta ul.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main #nuestrapropuesta ul.row li {
@@ -629,7 +637,7 @@ main #nuestrapropuesta ul.row li {
   text-align: center;
   margin: 0px;
   padding: 0 10px;
-  width: 20%;
+  width: 100%;
 }
 
 main #nuestrapropuesta ul.row li .iconos-svg {
@@ -646,20 +654,8 @@ main #nuestrapropuesta ul.row li h3 {
 }
 
 main #nuestrapropuesta #trabajosalumnos {
-  padding-top: 60px;
+  padding-top: 90px;
   text-align: center;
-  /*  .fotoindividual:hover{
-                    img{
-                        transition: 2s ease;
-                        filter: invert(100%);
-                        width: 100%;
-                    }
-                    .nombrealumno{
-                        p{
-                            display: inherit;
-                        }
-                    }
-                } */
 }
 
 main #nuestrapropuesta #trabajosalumnos .titulotercera {
@@ -669,27 +665,23 @@ main #nuestrapropuesta #trabajosalumnos .titulotercera {
 }
 
 main #nuestrapropuesta #trabajosalumnos .fotosalumnos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  margin: 0;
-}
-
-main #nuestrapropuesta #trabajosalumnos .fotoindividual {
   height: 400px;
+  width: 100%;
 }
 
-main #nuestrapropuesta #trabajosalumnos .fotoindividual .img {
+main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual {
+  height: 400px;
+  width: 100%;
+}
+
+main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual img {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
-main #nuestrapropuesta #trabajosalumnos .fotoindividual .nombrealumno {
+main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno {
   background-color: #c71c24;
   color: white;
   position: relative;
@@ -699,15 +691,34 @@ main #nuestrapropuesta #trabajosalumnos .fotoindividual .nombrealumno {
   border-radius: 50px;
 }
 
-main #nuestrapropuesta #trabajosalumnos .fotoindividual .nombrealumno p {
+main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual .nombrealumno p {
   margin: 0px;
   text-align: center;
   padding: 3px;
   display: none;
 }
 
+main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual:hover img {
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 100%;
+}
+
+main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual:hover .nombrealumno p {
+  display: inherit;
+}
+
 /*------------------PANTALLA 1024px--------------------*/
 @media screen and (min-width: 1050px) {
+  main #presentacion .row .informacion {
+    width: 50%;
+  }
+  main #presentacion .row .informacion h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
   main #presentacion .row .foto {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -750,6 +761,26 @@ main #nuestrapropuesta #trabajosalumnos .fotoindividual .nombrealumno p {
     position: absolute;
     top: -100px;
     right: -30px;
+  }
+  main #quehacemos .row .foto {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main #nuestrapropuesta .informacion p {
+    width: 60%;
+  }
+  main #nuestrapropuesta ul.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main #nuestrapropuesta ul.row li {
+    width: 20%;
   }
 }
 

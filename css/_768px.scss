@@ -3,6 +3,13 @@
     main{
         #presentacion{
             .row{
+                .informacion{
+                    width: 50%;
+                    h1{
+                        font-size: 6rem;
+                        line-height: 6rem;
+                    }
+                }
                 .foto{
                     display: flex;
                     flex-direction: row-reverse;
@@ -38,7 +45,29 @@
                 }
             }
         }
-        
+
+        #quehacemos{
+            .row{
+                .foto{
+                    order: 1;
+                }
+            }
+        }
+
+        #nuestrapropuesta{
+            .informacion{
+                p{
+                    width: 60%;
+                }
+            }
+            ul.row{
+                display: flex;
+                flex-direction: row;
+                li{
+                    width: 20%;
+                }
+            }
+        }
     }
 }
 
@@ -117,6 +146,7 @@
         }
     }
 }
+
 
 /* @media (max-width: 990px) {
     main{
