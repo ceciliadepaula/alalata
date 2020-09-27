@@ -1,0 +1,22 @@
+footer{
+    background-color: $colorppal;
+    color: $colorblanco;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    .datosfinales{
+        margin: 0 5%;
+        text-align: center;
+    }
+    .iconos{
+        margin: 0 5%;
+        text-align: center;
+        align-self: center; 
+        a{
+            color: $colorblanco;
+            font-size: 1.4rem;
+            padding: 0px 10px;
+        }
+    }
+}

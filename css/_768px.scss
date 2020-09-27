@@ -77,7 +77,18 @@
                 }
             }
         }
+
+        #contacto{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            .mapa{
+                margin: 0;
+            }
+        }
     }
+
 }
 
 @media screen and (min-width: 950px){
@@ -154,32 +165,23 @@
             }
         }
     }
-}
-
-
-/* @media (max-width: 990px) {
-    main{
-        #presentacion, .container{
-            .row{
-                .foto{
-                    display: none;
-                }
-            }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
+        .datosfinales{
+            text-align: center;
+            margin: 0;
         }
-        #nosotros{
-            .row{
-                .informacion{
-                    margin-top: 50px;
-                }
-            }
+        .izquierda{
+            text-align: left;
         }
-        #quehacemos{
-            .foto{
-                order: -1;
-            }
-            .informacion{
-                margin-top: 50px;
-            }
+        .iconos{
+            text-align: right;
+            align-self: flex-end; 
+            margin: 0;
         }
     }
-} */
+}

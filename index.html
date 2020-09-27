@@ -180,67 +180,69 @@
                 </div>
             </div>
         </section> 
-  
-        <section id="contacto" class="container-fluid">
-            <div class="row">
-                <div class="informacion col-sm-12 col-lg-6">
-                    <h2 class="titulosecundario">Contacto</h2>
-                    <form action="index.html" method="POST" name="formulario" enctype="application/x-www-form-urlencoded">
-                        <label for="nombre"><input placeholder="Nombre" class="completar" type="text" name="nombre" size="50"></label>
-                        <br>
-                        <label for="nombre"><input placeholder="Apellido" class="completar" type="text" name="apellido" size="50"></label>
-                        <br>
-                        <label for="nacido"><input placeholder="E-mail" class="completar" type="email" name="mail" size="24"></label>
-                        <select id="provincia">
-                            <option value="Buenos Aires">Buenos Aires</option>
-                            <option value="Catamarca">Catamarca</option>
-                            <option value="Chaco">Chaco</option>
-                            <option value="Chubut">Chubut</option>
-                            <option value="Cordoba">Cordoba</option>
-                            <option value="Corrientes">Corrientes</option>
-                            <option value="Entre Rios">Entre Rios</option>
-                            <option value="Formosa">Formosa</option>
-                            <option value="Jujuy">Jujuy</option>
-                            <option value="La Pampa">La Pampa</option>
-                            <option value="La Rioja">La Rioja</option>
-                            <option value="Mendoza">Mendoza</option>
-                            <option value="Misiones">Misiones</option>
-                            <option value="Neuquen">Neuquen</option>
-                            <option value="Rio Negro">Rio Negro</option>
-                            <option value="Salta">Salta</option>
-                            <option value="San Juan">San Juan</option>
-                            <option value="San Luis">San Luis</option>
-                            <option value="Santa Cruz">Santa Cruz</option>
-                            <option value="Santa Fe">Santa Fe</option>
-                            <option value="Sgo. del Estero">Sgo. del Estero</option>
-                            <option value="Tierra del Fuego">Tierra del Fuego</option>
-                            <option value="Tucuman">Tucuman</option>
-                            <option disabled="true" selected="true" value="">Provincia de residencia</option>
-                        </select>
-                        <textarea class="completar" name="textarea" cols="50" rows="6">Deja tu mensaje aquí</textarea>
-                        <br>
-                        <label><input class="check" type="checkbox" id="cbox1" value="checked">Deseo suscribirme al blog</label>
-                        <br>
-                        <br>
-                        <input class="boton" type="submit" value="Enviar">
+
+        <section id="contacto">
+            <div class="informacion">
+                <h2 class="titulosecundario">Contacto</h2>
+                <form action="index.html" method="POST" name="formulario" enctype="application/x-www-form-urlencoded">
+                    <label for="nombre">Nombre: <input class="completar" type="text" name="nombre" size="50"></label>
+
+                    <label for="nombre">Apellido: <input class="completar" type="text" name="apellido" size="50"></label>
+
+                    <label for="nacido">E-mail: <input class="completar" type="email" name="mail" size="24"></label>
+                    <select id="provincia">
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Rios">Entre Rios</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquen">Neuquen</option>
+                        <option value="Rio Negro">Rio Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Sgo. del Estero">Sgo. del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucuman">Tucuman</option>
+                        <option disabled="true" selected="true" value="">Provincia de residencia</option>
+                    </select>
+
+                    <textarea class="completar" name="textarea" cols="50" rows="6">Deja tu mensaje aquí</textarea>
+                    <label class="check"><input type="checkbox" id="cbox1" value="checked"> Deseo suscribirme al blog</label>
+
+                    <div class="centrarbotones">
+                        <input class="boton b1" type="submit" value="Enviar">
                         <input class="boton" type="reset" value="Borrar"> 
-                    </form>
-                </div>
-                <iframe class="mapa col-sm-12 col-lg-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108722.54716874225!2d-60.7762977542046!3d-31.61797740172731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe!5e0!3m2!1ses-419!2sar!4v1599092604621!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>    
+                </form>
             </div>
-        </section>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108722.54716874225!2d-60.7762977542046!3d-31.61797740172731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe!5e0!3m2!1ses-419!2sar!4v1599092604621!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>    
     </main>
 
-    <!-- <footer>
+    <footer>
+        <p class="datosfinales izquierda">
+            <span class="negrita blanca">Alalata Fotografía</span>
+        </p>
         <p class="datosfinales">
-            <span class="negrita blanca">Alalata Fotografía</span> / alalatafotografia@gmail.com
+            <span class="blanca">alalatafotografia@gmail.com</span>
         </p>
         <div class="iconos">
             <a href="https://www.facebook.com/alalatafotografia/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/alalatafotografia/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.behance.net/gallery/96872605/Alalata-Fotografia-Estenopeica/" target="_blank"><i class="fab fa-behance-square"></i></a>
         </div>      
-    </footer> -->
+    </footer>
 
     <!----BOOTSTRAP---->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

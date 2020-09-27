@@ -67,6 +67,11 @@ header #barranavegacion {
           justify-content: space-between;
 }
 
+header #barranavegacion a {
+  position: fixed;
+  z-index: 102;
+}
+
 header #barranavegacion a .logo {
   width: 150px;
   padding: 15px 0 15px 5%;
@@ -74,12 +79,10 @@ header #barranavegacion a .logo {
 
 header #barranavegacion nav {
   z-index: 15;
-  /* height: 60px; */
 }
 
 header #barranavegacion nav .menu {
   margin-top: 24px;
-  /* align-items: center; */
   /*---------CHECKBOX TRANSPARENTE-----------*/
   /*---------SPAN MENÚ HAMBURGUESA-----------*/
   /*---------MOVIMIENTO A CRUZ-----------*/
@@ -186,105 +189,6 @@ header #barranavegacion .sombra {
   /* z-index: -99; */
 }
 
-/* 
-
-
-
-
-
-
-header{
-    background-color: $colorppal;
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    box-sizing: content-box;
-    a{
-        .logo{
-            width: 150px;
-            padding: 15px 0 15px 5%;
-            float: left;
-            box-sizing: content-box;
-        }
-    }
-    nav{
-        ul{
-            margin-top: 11px;
-            margin-bottom: 0px;
-            position: absolute;
-            right: 5%;
-            top: 5px;
-            li{
-                list-style:none;
-                text-transform: uppercase;   
-                display: inline-block;
-                padding-left: 30px;  
-                a{
-                    text-decoration: none;
-                    color: $colorblanco;
-                }
-                a:hover{
-                    font-weight: bold;
-                    color: $colorblanco;
-                    text-decoration: none;
-                }
-                .dropdown-menu{
-                    a{
-                        padding: 0.7rem;
-                        color: $colorblanco;
-                    }
-                    a:hover{
-                        color: $colorblanco;
-                    }
-                }
-            }
-            .botonblanco{
-                a{
-                    color: $colorppal;
-                    background-color: $colorblanco;
-                    padding: 4px 20px;
-                    border-radius: 50px;
-                    font-weight: bold;
-                }
-                a:hover{
-                    font-weight: normal;
-                    color: $colorppal;
-                }
-            }
-        }
-    }
-    .sombra{
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        height: 62px;
-        width: 100%;
-        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
-        z-index: -99;
-    }
-}
-
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background-color: $colorppal;
-}
-
-.nav-link {
-    padding: 0;
-  }
-
-.dropdown-menu {
-    margin: 5px 0 0 0;
-    background-color: $colorppal;
-    border: none;
-    min-width: 15rem;
-    padding: 0.5rem 0;
-    border-radius: 0.25rem;
-}
- */
 @-webkit-keyframes mover {
   0% {
     -webkit-transform: rotate(20deg);
@@ -299,6 +203,7 @@ header{
             transform: rotate(20deg);
   }
 }
+
 @keyframes mover {
   0% {
     -webkit-transform: rotate(20deg);
@@ -715,27 +620,52 @@ main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual:hover .nom
 }
 
 #contacto {
-  /* text-align: right; */
   text-align: center;
-  /*     display: flex;
-    flex-direction: row; */
   padding: 80px 0 0 0;
   margin: initial;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  margin-bottom: 80px;
 }
 
-#contacto .row .informacion {
+#contacto .informacion {
   float: left;
   width: 100%;
   padding: 0;
 }
 
-#contacto .row .informacion form {
+#contacto .informacion h2 {
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+#contacto .informacion form {
   text-align: left;
   width: 100%;
   margin: 0 5% 0 0;
 }
 
-#contacto .row .informacion form .boton {
+#contacto .informacion form #provincia {
+  font-family: 'Work Sans', sans-serif;
+}
+
+#contacto .informacion form .centrarbotones {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contacto .informacion form .centrarbotones .boton {
   border: 0px;
   color: whitesmoke;
   -webkit-animation-duration: 3s;
@@ -747,22 +677,23 @@ main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual:hover .nom
   font-size: 1rem;
   font-weight: 400;
   padding: 7px;
-  width: 200px;
+  width: 150px;
   text-align: center;
   border-radius: 50px;
   text-transform: uppercase;
 }
 
-#contacto .row .informacion form .boton:hover {
+#contacto .informacion form .centrarbotones .boton:hover {
   font-weight: bold;
 }
 
-#contacto .row .informacion form #provincia {
-  font-family: 'Work Sans', sans-serif;
+#contacto .informacion form .centrarbotones .b1 {
+  margin-right: 10px;
 }
 
-#contacto .row .mapa {
+#contacto .mapa {
   height: 600px;
+  width: 100%;
   margin: 0;
   padding: 0;
   margin-top: 20px;
@@ -770,6 +701,7 @@ main #nuestrapropuesta #trabajosalumnos .fotosalumnos .fotoindividual:hover .nom
 
 label {
   width: 100%;
+  margin: 0 0 1rem 0;
 }
 
 .completar {
@@ -782,11 +714,43 @@ label {
 select {
   display: block;
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin: .4rem 0 1.4rem 0;
 }
 
 .check {
   position: relative;
+  margin: 1rem 0;
+}
+
+footer {
+  background-color: #c71c24;
+  color: whitesmoke;
+  padding: 10px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+footer .datosfinales {
+  margin: 0 5%;
+  text-align: center;
+}
+
+footer .iconos {
+  margin: 0 5%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .iconos a {
+  color: whitesmoke;
+  font-size: 1.4rem;
+  padding: 0px 10px;
 }
 
 /*------------------PANTALLA 1024px--------------------*/
@@ -871,6 +835,19 @@ select {
     margin: initial;
     width: 100%;
   }
+  main #contacto {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  main #contacto .mapa {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -941,32 +918,28 @@ select {
   header #barranavegacion nav input#checkbox {
     display: none;
   }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  footer .datosfinales {
+    text-align: center;
+    margin: 0;
+  }
+  footer .izquierda {
+    text-align: left;
+  }
+  footer .iconos {
+    text-align: right;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 0;
+  }
 }
-
-/* @media (max-width: 990px) {
-    main{
-        #presentacion, .container{
-            .row{
-                .foto{
-                    display: none;
-                }
-            }
-        }
-        #nosotros{
-            .row{
-                .informacion{
-                    margin-top: 50px;
-                }
-            }
-        }
-        #quehacemos{
-            .foto{
-                order: -1;
-            }
-            .informacion{
-                margin-top: 50px;
-            }
-        }
-    }
-} */
 /*# sourceMappingURL=style.css.map */

@@ -1,24 +1,31 @@
 #contacto{
-    /* text-align: right; */
     text-align: center;
-
-    
-/*     display: flex;
-    flex-direction: row; */
     padding: 80px 0 0 0;
     margin: initial;
-    .row{
-        .informacion{
-            float: left;
-            width: 100%;
-            padding: 0;
-            h2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;  
 
+    margin-bottom: 80px;
+    .informacion{
+        float: left;
+        width: 100%;
+        padding: 0;
+        h2{
+            padding-bottom: 30px;
+            margin-bottom: 0;
+        }
+        form{
+            text-align: left;
+            width: 100%;
+            margin: 0 5% 0 0;
+            #provincia{
+                font-family: 'Work Sans', sans-serif;
             }
-            form{
-                text-align: left;
-                width: 100%;
-                margin: 0 5% 0 0;
+            .centrarbotones{
+                margin-top: 0.5rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
                 .boton{
                     border: 0px;
                     color: $colorblanco;
@@ -29,7 +36,7 @@
                     font-size: 1rem;
                     font-weight: 400;
                     padding: 7px;
-                    width: 200px;
+                    width: 150px;
                     text-align: center;
                     border-radius: 50px;
                     text-transform: uppercase;
@@ -37,36 +44,39 @@
                 .boton:hover{
                     font-weight: bold;
                 }
-                #provincia{
-                    font-family: 'Work Sans', sans-serif;
+                .b1{
+                    margin-right: 10px;
                 }
             }
         }
-        .mapa{
-            height: 600px;
-            margin: 0;
-            padding: 0;
-            margin-top: 20px;
-        }
+    }
+    .mapa{
+        height: 600px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
     }
 }
 
+
 label{
     width: 100%;
+    margin:0 0 1rem 0;
+
 }
 .completar {
     display: flex;
     width: 100%;
-
 }
 
 select {
   display: block;
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin:.4rem 0 1.4rem 0;
 }
 
 .check{
     position: relative;
-
+    margin: 1rem 0;
 }
