@@ -68,8 +68,8 @@ header #barranavegacion {
 }
 
 header #barranavegacion a {
-  position: fixed;
-  z-index: 102;
+  position: relative;
+  z-index: 1025;
 }
 
 header #barranavegacion a .logo {
@@ -79,10 +79,12 @@ header #barranavegacion a .logo {
 
 header #barranavegacion nav {
   z-index: 15;
+  /* height: 60px; */
 }
 
 header #barranavegacion nav .menu {
   margin-top: 24px;
+  /* align-items: center; */
   /*---------CHECKBOX TRANSPARENTE-----------*/
   /*---------SPAN MENÚ HAMBURGUESA-----------*/
   /*---------MOVIMIENTO A CRUZ-----------*/
@@ -942,4 +944,31 @@ footer .iconos a {
     margin: 0;
   }
 }
+
+/* @media (max-width: 990px) {
+    main{
+        #presentacion, .container{
+            .row{
+                .foto{
+                    display: none;
+                }
+            }
+        }
+        #nosotros{
+            .row{
+                .informacion{
+                    margin-top: 50px;
+                }
+            }
+        }
+        #quehacemos{
+            .foto{
+                order: -1;
+            }
+            .informacion{
+                margin-top: 50px;
+            }
+        }
+    }
+} */
 /*# sourceMappingURL=style.css.map */

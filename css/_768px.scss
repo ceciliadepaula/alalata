@@ -185,3 +185,31 @@
         }
     }
 }
+
+
+/* @media (max-width: 990px) {
+    main{
+        #presentacion, .container{
+            .row{
+                .foto{
+                    display: none;
+                }
+            }
+        }
+        #nosotros{
+            .row{
+                .informacion{
+                    margin-top: 50px;
+                }
+            }
+        }
+        #quehacemos{
+            .foto{
+                order: -1;
+            }
+            .informacion{
+                margin-top: 50px;
+            }
+        }
+    }
+} */
