@@ -1,4 +1,124 @@
-@media (max-width: 990px) {
+/*------------------PANTALLA 1024px--------------------*/
+@media screen and (min-width: 1050px){
+    main{
+        #presentacion{
+            .row{
+                .foto{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: right;
+                    height: 470px;
+                    padding: 0 60px 0 0;
+                    img{
+                        height: 450px;
+                        z-index: 99;
+                        animation: mover 6s infinite;
+                    }
+                    .circulo{
+                        border-radius: 50%;
+                    }
+                    .c1{
+                        animation: achicar 5s infinite;
+                        background: $colorppal;
+                        width: 650px;
+                        height: 650px;
+                        position: absolute;
+                        top: -240px;
+                        right: -160px;
+                    }
+                    .c2{
+                        animation: achicar2 6s infinite;
+                        background:  $colorblanco;
+                        width: 400px;
+                        height: 400px;
+                        position: absolute;
+                        top: -100px;
+                        right: -30px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 950px){
+    header{
+        #barranavegacion{
+            display: inline-block;
+            a{
+                .logo{
+                    box-sizing: content-box;
+                    padding-left: 0;
+                    width: 142.5px;
+                }
+            }
+            nav{
+                position: fixed;
+                top: -60px;
+                right: 5%;
+                .menu{
+                    ul{
+                        overflow: visible;
+                        /* position: absolute;
+                        top: 5px;
+                        right: 5%; */
+                        background-color: none;
+
+                        display: flex;
+                        justify-content: flex-end;
+                        top: 70px;
+                        li{
+                            display: inline;
+                            padding-left: 28px;
+                            a{
+                                color: $colorblanco;
+                                margin-top: -8px;             
+                            }
+                            a:hover{
+                                font-weight: bold;
+                                color: $colorblanco;
+                            }
+                        }
+                        li:hover{
+                            background-color: initial; 
+                        }
+                        .botonblanco{
+                            a{
+                                color: $colorppal;
+                                background-color: $colorblanco;
+                                padding: 0 20px;
+                                border-radius: 50px;
+                                font-weight: bold;
+                            }
+                            a:hover{
+                                font-weight: normal;
+                                color: $colorppal;
+                            }
+                        }
+                        .botonblanco:hover{
+                            a{
+                                color: $colorppal;
+                                background-color: $colorblanco;
+                            }
+                            a:hover{
+                                color: $colorppal;
+                            }
+                        }
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+                input#checkbox{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* @media (max-width: 990px) {
     main{
         #presentacion, .container{
             .row{
@@ -23,4 +143,4 @@
             }
         }
     }
-}
+} */

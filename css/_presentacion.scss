@@ -20,12 +20,14 @@ main{
     margin: 5%;
     position: relative;
     top: 40px;
+    width: 100%;
     #presentacion, .container{
         margin: 90px 0 20px 0;
         .row{
             .informacion{
                 float: left;
-                width: 50%;
+                /* width: 50%; */
+                width: 100%;
                 padding: 0;
                 h1{
                     animation-duration: 3s;
@@ -57,37 +59,7 @@ main{
                 }
             }
             .foto{
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: right;
-                height: 470px;
-                padding: 0 60px 0 0;
-                img{
-                    height: 450px;
-                    z-index: 99;
-                    animation: mover 6s infinite;
-                }
-                .circulo{
-                    border-radius: 50%;
-                }
-                .c1{
-                    animation: achicar 5s infinite;
-                    background: $colorppal;
-                    width: 650px;
-                    height: 650px;
-                    position: absolute;
-                    top: -240px;
-                    right: -160px;
-                }
-                .c2{
-                    animation: achicar2 6s infinite;
-                    background:  $colorblanco;
-                    width: 400px;
-                    height: 400px;
-                    position: absolute;
-                    top: -100px;
-                    right: -30px;
-                }
+                display:none;
             }
         }
     }

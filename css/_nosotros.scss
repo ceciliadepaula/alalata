@@ -9,6 +9,7 @@ main{
                 text-align: center;
                 align-self: center;   
                 box-sizing: border-box;
+                margin-top: 50px;
                 p{
                     padding: 1rem 0;
                     box-sizing: border-box;
@@ -21,8 +22,8 @@ main{
                 flex-direction: column;
                 box-sizing: border-box;
                 img{
-                    width: 500px;
-                    height: 500px;
+                    width: 100%;
+                    /* height: ; */
                     border-radius: 50%;
                     object-fit: cover;
                     align-self: center;
