@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/blog.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Un poco de historia / Alalata Fotografía</title>
+    <link rel="icon" type="image/svg" href="images/logo-rojo.svg">
+    <!--Hojas de estilo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link rel="stylesheet" href="../css/blog.css">
+    <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg" href="../images/logo-rojo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="../index.html"><img class="logo" src="../images/logo-derecho-blanco.svg" alt="Logotipo Alalata"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html#nosotros">Nosotros</a></li>
-                <li><a href="../index.html#quehacemos">Requisitos</a></li>
-                <li><a href="../index.html#nuestrapropuesta">Contenidos</a></li>
-                <li><a href="../index.html#trabajosalumnos">Trabajos de alumnos</a></li>
-                <li><a href="../index.html#contacto">Contacto</a></li>
-                <li class="botonblanco"><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="sombra"></div>
+        <div id="barranavegacion">
+            <a href="../index.html"><img class="logo" src="../images/logo-derecho-blanco.svg" alt="Logotipo Alalata"></a>
+            <nav>
+                <div class="menu">
+                    <input type="checkbox" id="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="../index.html#quehacemos">Requisitos</a></li>
+                        <li><a href="../index.html#nuestrapropuesta">Contenidos</a></li>
+                        <li><a href="../index.html#trabajosalumnos">Trabajos</a></li>
+                        <li><a href="../index.html#contacto">Contacto</a></li>
+                        <li class="botonblanco"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sombra"></div>
+        </div>
     </header>
 
     <main class="notablog">
@@ -130,8 +142,11 @@
        
 
     <footer>
+        <p class="datosfinales izquierda">
+            <span class="negrita blanca">Alalata Fotografía</span>
+        </p>
         <p class="datosfinales">
-            <span class="negrita blanca">Alalata Fotografía</span> / alalatafotografia@gmail.com
+            <span class="blanca">alalatafotografia@gmail.com</span>
         </p>
         <div class="iconos">
             <a href="https://www.facebook.com/alalatafotografia/" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -139,5 +154,11 @@
             <a href="https://www.behance.net/gallery/96872605/Alalata-Fotografia-Estenopeica/" target="_blank"><i class="fab fa-behance-square"></i></a>
         </div>      
     </footer>
+
+    <!----BOOTSTRAP---->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>

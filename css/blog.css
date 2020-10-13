@@ -19,6 +19,15 @@ table{
 
 /*------blog-----------------------------------------*/
 
+.notablog{
+    width: 100%;
+    margin: 0;
+}
+
+.notablog #presentacion .informacion .tituloppal{
+    margin-bottom: 3rem;
+}
+
 #articulos{
     padding: 90px 0 0 0;
     display: grid;
@@ -137,4 +146,9 @@ p.epigrafe{
     width: 100%;
     height: 450px;
     object-fit: cover;
+}
+
+#cuerpoposteo .titulotercera{
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
