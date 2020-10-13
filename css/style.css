@@ -754,8 +754,143 @@ footer .iconos a {
   padding: 0px 10px;
 }
 
-/*------------------PANTALLA 1024px--------------------*/
-@media screen and (min-width: 1050px) {
+/*------------------PANTALLA 768px--------------------*/
+@media (min-width: 768px) {
+  #nuestrapropuesta #trabajosalumnos .fotosalumnos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    margin: initial;
+    width: 115%;
+    margin: 0 -7.5%;
+  }
+  #nuestrapropuesta #trabajosalumnos .sacar {
+    display: none;
+  }
+}
+
+/*------------------PANTALLA 950px--------------------*/
+@media (min-width: 950px) {
+  header #barranavegacion {
+    display: inline-block;
+  }
+  header #barranavegacion a .logo {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding-left: 0;
+    width: 142.5px;
+  }
+  header #barranavegacion nav {
+    position: fixed;
+    top: -60px;
+    right: 5%;
+  }
+  header #barranavegacion nav .menu ul {
+    overflow: visible;
+    /* position: absolute;
+                        top: 5px;
+                        right: 5%; */
+    /* background-color: none; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    top: 70px;
+  }
+  header #barranavegacion nav .menu ul li {
+    display: inline;
+    padding-left: 28px;
+  }
+  header #barranavegacion nav .menu ul li a {
+    color: whitesmoke;
+    margin-top: -8px;
+  }
+  header #barranavegacion nav .menu ul li a:hover {
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  header #barranavegacion nav .menu ul li:hover {
+    background-color: initial;
+  }
+  header #barranavegacion nav .menu ul .botonblanco a {
+    color: #c71c24;
+    background-color: whitesmoke;
+    padding: 0 20px;
+    border-radius: 50px;
+    font-weight: bold;
+  }
+  header #barranavegacion nav .menu ul .botonblanco a:hover {
+    font-weight: normal;
+    color: #c71c24;
+  }
+  header #barranavegacion nav .menu ul .botonblanco:hover a {
+    color: #c71c24;
+    background-color: whitesmoke;
+  }
+  header #barranavegacion nav .menu ul .botonblanco:hover a:hover {
+    color: #c71c24;
+  }
+  header #barranavegacion nav .menu span {
+    display: none;
+  }
+  header #barranavegacion nav input#checkbox {
+    display: none;
+  }
+  main #presentacion .row .informacion {
+    width: 50%;
+  }
+  main #presentacion .row .informacion h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  footer .datosfinales {
+    text-align: center;
+    margin: 0;
+  }
+  footer .izquierda {
+    text-align: left;
+  }
+  footer .iconos {
+    text-align: right;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 0;
+  }
+}
+
+/*------------------PANTALLA 990px--------------------*/
+@media (min-width: 990px) {
+  #presentacion .row .col-lg-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/*------------------PANTALLA 1050px--------------------*/
+@media (min-width: 1110px) {
+  #presentacion .row .col-lg-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
   main #presentacion .row .informacion {
     width: 50%;
   }
@@ -837,6 +972,9 @@ footer .iconos a {
     width: 115%;
     margin: 0 -7.5%;
   }
+  main #nuestrapropuesta #trabajosalumnos .sacar {
+    display: inherit;
+  }
   main #contacto {
     display: -ms-grid;
     display: grid;
@@ -851,124 +989,4 @@ footer .iconos a {
     margin: 0;
   }
 }
-
-@media screen and (min-width: 950px) {
-  header #barranavegacion {
-    display: inline-block;
-  }
-  header #barranavegacion a .logo {
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    padding-left: 0;
-    width: 142.5px;
-  }
-  header #barranavegacion nav {
-    position: fixed;
-    top: -60px;
-    right: 5%;
-  }
-  header #barranavegacion nav .menu ul {
-    overflow: visible;
-    /* position: absolute;
-                        top: 5px;
-                        right: 5%; */
-    background-color: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    top: 70px;
-  }
-  header #barranavegacion nav .menu ul li {
-    display: inline;
-    padding-left: 28px;
-  }
-  header #barranavegacion nav .menu ul li a {
-    color: whitesmoke;
-    margin-top: -8px;
-  }
-  header #barranavegacion nav .menu ul li a:hover {
-    font-weight: bold;
-    color: whitesmoke;
-  }
-  header #barranavegacion nav .menu ul li:hover {
-    background-color: initial;
-  }
-  header #barranavegacion nav .menu ul .botonblanco a {
-    color: #c71c24;
-    background-color: whitesmoke;
-    padding: 0 20px;
-    border-radius: 50px;
-    font-weight: bold;
-  }
-  header #barranavegacion nav .menu ul .botonblanco a:hover {
-    font-weight: normal;
-    color: #c71c24;
-  }
-  header #barranavegacion nav .menu ul .botonblanco:hover a {
-    color: #c71c24;
-    background-color: whitesmoke;
-  }
-  header #barranavegacion nav .menu ul .botonblanco:hover a:hover {
-    color: #c71c24;
-  }
-  header #barranavegacion nav .menu span {
-    display: none;
-  }
-  header #barranavegacion nav input#checkbox {
-    display: none;
-  }
-  footer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  footer .datosfinales {
-    text-align: center;
-    margin: 0;
-  }
-  footer .izquierda {
-    text-align: left;
-  }
-  footer .iconos {
-    text-align: right;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin: 0;
-  }
-}
-
-/* @media (max-width: 990px) {
-    main{
-        #presentacion, .container{
-            .row{
-                .foto{
-                    display: none;
-                }
-            }
-        }
-        #nosotros{
-            .row{
-                .informacion{
-                    margin-top: 50px;
-                }
-            }
-        }
-        #quehacemos{
-            .foto{
-                order: -1;
-            }
-            .informacion{
-                margin-top: 50px;
-            }
-        }
-    }
-} */
 /*# sourceMappingURL=style.css.map */

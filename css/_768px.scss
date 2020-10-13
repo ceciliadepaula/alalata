@@ -1,5 +1,156 @@
-/*------------------PANTALLA 1024px--------------------*/
-@media screen and (min-width: 1050px){
+/*------------------PANTALLA 768px--------------------*/
+@media (min-width: 768px){
+    #nuestrapropuesta{
+        #trabajosalumnos{
+            .fotosalumnos{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                margin: initial;
+                width: 115%;
+                margin: 0 -7.5%;
+            }
+            .sacar{
+                display: none;
+            }
+        }
+    }
+}
+
+/*------------------PANTALLA 950px--------------------*/
+@media (min-width: 950px){
+    header{
+        #barranavegacion{
+            display: inline-block;
+            a{
+                .logo{
+                    box-sizing: content-box;
+                    padding-left: 0;
+                    width: 142.5px;
+                }
+            }
+            nav{
+                position: fixed;
+                top: -60px;
+                right: 5%;
+                .menu{
+                    ul{
+                        overflow: visible;
+                        /* position: absolute;
+                        top: 5px;
+                        right: 5%; */
+                        /* background-color: none; */
+
+                        display: flex;
+                        justify-content: flex-end;
+                        top: 70px;
+                        li{
+                            display: inline;
+                            padding-left: 28px;
+                            a{
+                                color: $colorblanco;
+                                margin-top: -8px;             
+                            }
+                            a:hover{
+                                font-weight: bold;
+                                color: $colorblanco;
+                            }
+                        }
+                        li:hover{
+                            background-color: initial; 
+                        }
+                        .botonblanco{
+                            a{
+                                color: $colorppal;
+                                background-color: $colorblanco;
+                                padding: 0 20px;
+                                border-radius: 50px;
+                                font-weight: bold;
+                            }
+                            a:hover{
+                                font-weight: normal;
+                                color: $colorppal;
+                            }
+                        }
+                        .botonblanco:hover{
+                            a{
+                                color: $colorppal;
+                                background-color: $colorblanco;
+                            }
+                            a:hover{
+                                color: $colorppal;
+                            }
+                        }
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+                input#checkbox{
+                    display: none;
+                }
+            }
+        }
+    }
+    main{
+        #presentacion{
+            .row{
+                .informacion{
+                    width: 50%;
+                    h1{
+                        font-size: 6rem;
+                        line-height: 6rem;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
+        .datosfinales{
+            text-align: center;
+            margin: 0;
+        }
+        .izquierda{
+            text-align: left;
+        }
+        .iconos{
+            text-align: right;
+            align-self: flex-end; 
+            margin: 0;
+        }
+    }
+}
+
+/*------------------PANTALLA 990px--------------------*/
+
+@media (min-width: 990px){
+    #presentacion{
+        .row{
+             .col-lg-6{
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+   
+}
+
+/*------------------PANTALLA 1050px--------------------*/
+@media (min-width: 1110px){
+    #presentacion{
+        .row{
+            .col-lg-6{
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }    
+
     main{
         #presentacion{
             .row{
@@ -76,6 +227,9 @@
                     width: 115%;
                     margin: 0 -7.5%;
                 }
+                .sacar{
+                    display: inherit;
+                }
             }
         }
 
@@ -91,126 +245,3 @@
     }
 
 }
-
-@media screen and (min-width: 950px){
-    header{
-        #barranavegacion{
-            display: inline-block;
-            a{
-                .logo{
-                    box-sizing: content-box;
-                    padding-left: 0;
-                    width: 142.5px;
-                }
-            }
-            nav{
-                position: fixed;
-                top: -60px;
-                right: 5%;
-                .menu{
-                    ul{
-                        overflow: visible;
-                        /* position: absolute;
-                        top: 5px;
-                        right: 5%; */
-                        background-color: none;
-
-                        display: flex;
-                        justify-content: flex-end;
-                        top: 70px;
-                        li{
-                            display: inline;
-                            padding-left: 28px;
-                            a{
-                                color: $colorblanco;
-                                margin-top: -8px;             
-                            }
-                            a:hover{
-                                font-weight: bold;
-                                color: $colorblanco;
-                            }
-                        }
-                        li:hover{
-                            background-color: initial; 
-                        }
-                        .botonblanco{
-                            a{
-                                color: $colorppal;
-                                background-color: $colorblanco;
-                                padding: 0 20px;
-                                border-radius: 50px;
-                                font-weight: bold;
-                            }
-                            a:hover{
-                                font-weight: normal;
-                                color: $colorppal;
-                            }
-                        }
-                        .botonblanco:hover{
-                            a{
-                                color: $colorppal;
-                                background-color: $colorblanco;
-                            }
-                            a:hover{
-                                color: $colorppal;
-                            }
-                        }
-                    }
-                    span{
-                        display: none;
-                    }
-                }
-                input#checkbox{
-                    display: none;
-                }
-            }
-        }
-    }
-    footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        padding-left: 5%;
-        padding-right: 5%;
-        .datosfinales{
-            text-align: center;
-            margin: 0;
-        }
-        .izquierda{
-            text-align: left;
-        }
-        .iconos{
-            text-align: right;
-            align-self: flex-end; 
-            margin: 0;
-        }
-    }
-}
-
-
-/* @media (max-width: 990px) {
-    main{
-        #presentacion, .container{
-            .row{
-                .foto{
-                    display: none;
-                }
-            }
-        }
-        #nosotros{
-            .row{
-                .informacion{
-                    margin-top: 50px;
-                }
-            }
-        }
-        #quehacemos{
-            .foto{
-                order: -1;
-            }
-            .informacion{
-                margin-top: 50px;
-            }
-        }
-    }
-} */
