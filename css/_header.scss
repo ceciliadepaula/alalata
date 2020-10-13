@@ -20,13 +20,8 @@ header{
         }
         nav{
             z-index: 15;
-            /* height: 60px; */
             .menu{
-                margin-top: 24px;  
-                /* align-items: center; */
-
-                
-                
+                margin-top: 24px;               
                 ul{
                     width: 100%;
                     position: absolute;
@@ -67,7 +62,7 @@ header{
 
                 }
                 input[type="checkbox"]:checked ~ ul {
-                    height: 350px;
+                    height: 300px;
                 } 
 
                 /*---------CHECKBOX TRANSPARENTE-----------*/

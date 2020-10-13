@@ -80,12 +80,10 @@ header #barranavegacion a .logo {
 
 header #barranavegacion nav {
   z-index: 15;
-  /* height: 60px; */
 }
 
 header #barranavegacion nav .menu {
   margin-top: 24px;
-  /* align-items: center; */
   /*---------CHECKBOX TRANSPARENTE-----------*/
   /*---------SPAN MENÚ HAMBURGUESA-----------*/
   /*---------MOVIMIENTO A CRUZ-----------*/
@@ -137,7 +135,7 @@ header #barranavegacion nav .menu ul li:active a {
 }
 
 header #barranavegacion nav .menu input[type="checkbox"]:checked ~ ul {
-  height: 350px;
+  height: 300px;
 }
 
 header #barranavegacion nav .menu input {
@@ -836,7 +834,8 @@ footer .iconos a {
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     margin: initial;
-    width: 100%;
+    width: 115%;
+    margin: 0 -7.5%;
   }
   main #contacto {
     display: -ms-grid;
