@@ -9,10 +9,29 @@
     .informacion{
         float: left;
         width: 100%;
+        height: 600px;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         h2{
             padding-bottom: 30px;
             margin-bottom: 0;
+        }
+        h3{
+            color: $colorppal;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        a{
+            text-decoration: none;
+            p{
+                color: $colornegro;
+            }
+        }
+        .br{
+            height: 5px;
         }
         form{
             text-align: left;
