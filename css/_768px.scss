@@ -104,6 +104,28 @@
                 }
             }
         }
+        #nosotros{
+            .row{
+                .informacion{
+                    .celular{
+                        display: none;
+                    }
+                    .computadora{
+                        display: inherit;
+                    }
+                }
+            }
+        }
+        #nuestrapropuesta{
+            #trabajosalumnos{
+                .celular{
+                    display: none;
+                }
+                .computadora{
+                    display: inherit;
+                }
+            }
+        }
     }
     footer{
         display: grid;
@@ -134,6 +156,15 @@
              .col-lg-6{
                 flex: 0 0 100%;
                 max-width: 100%;
+            }
+        }
+    }
+    main{
+            #quehacemos{
+            .row{
+                .foto{
+                    order: 1;
+                }
             }
         }
     }
@@ -193,14 +224,6 @@
                         top: -100px;
                         right: -30px;
                     }
-                }
-            }
-        }
-
-        #quehacemos{
-            .row{
-                .foto{
-                    order: 1;
                 }
             }
         }

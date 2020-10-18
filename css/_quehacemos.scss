@@ -108,7 +108,15 @@ main{
             .titulotercera{
                 font-family: $fuente;
                 font-weight: bold;
+            }
+            .aclaracion{
+                font-size: 1rem;
+                margin: 0;
+                padding-top: 10px;
                 padding-bottom: 2rem;  
+            }
+            .computadora{
+                display: none;
             }
             .fotosalumnos{
                 width: 122%;

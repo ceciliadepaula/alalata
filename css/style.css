@@ -373,6 +373,16 @@ main #nosotros .row .informacion p {
   margin: 1rem;
 }
 
+main #nosotros .row .informacion .aclaracion {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+main #nosotros .row .informacion .computadora {
+  display: none;
+}
+
 main #nosotros .row .foto {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
@@ -571,7 +581,17 @@ main #nuestrapropuesta #trabajosalumnos {
 main #nuestrapropuesta #trabajosalumnos .titulotercera {
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
+}
+
+main #nuestrapropuesta #trabajosalumnos .aclaracion {
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 10px;
   padding-bottom: 2rem;
+}
+
+main #nuestrapropuesta #trabajosalumnos .computadora {
+  display: none;
 }
 
 main #nuestrapropuesta #trabajosalumnos .fotosalumnos {
@@ -878,6 +898,18 @@ footer .iconos a {
     font-size: 6rem;
     line-height: 6rem;
   }
+  main #nosotros .row .informacion .celular {
+    display: none;
+  }
+  main #nosotros .row .informacion .computadora {
+    display: inherit;
+  }
+  main #nuestrapropuesta #trabajosalumnos .celular {
+    display: none;
+  }
+  main #nuestrapropuesta #trabajosalumnos .computadora {
+    display: inherit;
+  }
   footer {
     display: -ms-grid;
     display: grid;
@@ -910,6 +942,11 @@ footer .iconos a {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
+  }
+  main #quehacemos .row .foto {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -970,11 +1007,6 @@ footer .iconos a {
     position: absolute;
     top: -100px;
     right: -30px;
-  }
-  main #quehacemos .row .foto {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
   }
   main #nuestrapropuesta .informacion p {
     width: 60%;

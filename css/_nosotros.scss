@@ -18,6 +18,14 @@ main{
                     box-sizing: border-box;
                     margin: 1rem;
                 }
+                .aclaracion{
+                    font-size: 1rem;
+                    margin: 0;
+                    padding: 0;
+                }
+                .computadora{
+                    display: none;
+                }
             }
             .foto{
                 order: -1;
