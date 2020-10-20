@@ -277,3 +277,13 @@
     }
 
 }
+
+
+/*------------------PANTALLA 1400px--------------------*/
+@media (min-width: 1200px){
+    main{
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

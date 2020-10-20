@@ -1058,4 +1058,13 @@ footer .iconos a {
     margin: 0;
   }
 }
+
+/*------------------PANTALLA 1400px--------------------*/
+@media (min-width: 1200px) {
+  main {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
