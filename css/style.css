@@ -948,6 +948,13 @@ footer .iconos a {
         -ms-flex-order: 1;
             order: 1;
   }
+  section#quehacemos.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  div.row {
+    width: 100%;
+  }
 }
 
 /*------------------PANTALLA 1050px--------------------*/
